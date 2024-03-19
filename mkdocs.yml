@@ -116,6 +116,7 @@ nav:
         - Atari 7800: systems/atari7800.md
         - Atari Jaguar: systems/atarijaguar.md
         - ColecoVision: systems/colecovision.md
+        - Epoch Super Cassette Vision: systems/scv.md
         - Fairchild Channel F: systems/channelf.md
         - Mattel Intellivision: systems/intellivision.md
         - Magnavox Odyssey 2: systems/odyssey2.md
@@ -131,6 +132,7 @@ nav:
         - Nintendo Wii: systems/wii.md
         - Nintendo Wii U: systems/wiiu.md
         - Panasonic 3DO: systems/3do.md
+        - Philips CD-I: systems/cdi.md
         - Philips Videopac: systems/videopac.md
         - Sega SG-1000: systems/sg-1000.md
         - Sega Master System: systems/mastersystem.md
@@ -178,13 +180,16 @@ nav:
         - MS-DOS: systems/pc.md
         - NEC PC-88: systems/pc88.md
         - NEC PC-98: systems/pc98.md
+        - Palm OS: systems/palm.md
         - Sharp X1: systems/x1.md
         - Sharp X68000: systems/x68000.md
         - Sinclair ZX81: systems/zx81.md
-        - Sinclair ZX Spectrum: systems/zxspectrum.md 
+        - Sinclair ZX Spectrum: systems/zxspectrum.md
+        - Thomson MO/TO Family: systems/moto.md
       - Engines:
         - Build Engine: systems/build-engine.md
         - Doom: systems/doom.md
+        - CHIP-8 / S-CHIP / XO-CHIP: systems/chip-8.md
         - EasyRPG: systems/easyrpg.md
         - Infocom Zmachine: systems/zmachine.md
         - J2ME: systems/j2me.md
@@ -192,6 +197,7 @@ nav:
         - Pico-8: systems/pico-8.md
         - SCUMMVM: systems/scummvm.md
         - TIC-80: systems/tic-80.md
+        - Vircon 32: systems/vircon32.md
       - Other:
         - Moonlight: systems/moonlight.md
         - Media Player: systems/mplayer.md
