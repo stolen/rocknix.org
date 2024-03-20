@@ -4,8 +4,8 @@
 
 | System | Game Path | Supported Extensions |
 | -- | -- | -- |
-| Neo Geo Pocket | `roms/ngp` | ++".ngp"++ ++".zips"++ ++".7z"++ |
-| Neo Geo Pocket Color | `roms/npgc` | ++".ngc"++ ++".zips"++ ++".7z"++ |
+| Neo Geo Pocket | `roms/ngp` | ++".ngp"++ ++".ngc"++ ++".zips"++ ++".7z"++ |
+| Neo Geo Pocket Color | `roms/npgc` | ++".ngp"++ ++".ngc"++ ++".zips"++ ++".7z"++ |
 
 ## Emulator/Core
 

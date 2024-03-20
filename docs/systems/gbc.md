@@ -4,7 +4,7 @@
 
 | Game Path | Supported Extensions |
 | --- | --- |
-| `roms/gbc` | ++".gbc"++ ++".zip"++ ++".7z"++ |
+| `roms/gbc` | ++".gb"++ ++".gbc"++ ++".zip"++ ++".7z"++ |
 
 ## Emulator/Core
 
