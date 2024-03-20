@@ -4,8 +4,8 @@
 
 | System | Game Path | Supported Extensions |
 | -- | -- | -- |
-| Wonderswan | `roms/wonderswan` | ++".ws"++ ++".zips"++ ++".7z"++ |
-| Wonderswan Color | `roms/wonderswancolor` | ++".wscs"++ ++".zips"++ ++".7z"++ |
+| Wonderswan | `roms/wonderswan` | ++".ws"++ ++".wsc"++ ++".zips"++ ++".7z"++ |
+| Wonderswan Color | `roms/wonderswancolor` | ++".ws"++ ++".wsc"++ ++".zips"++ ++".7z"++ |
 
 ## Emulator/Core
 
