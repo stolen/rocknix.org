@@ -10,8 +10,8 @@
 
 | Name | Documentation |
 | --- | --- |
-| blueMSX &nbsp; `default` | [docs.libretro.com/library/bluemsx](https://docs.libretro.com/library/bluemsx/) |
-| GearColeco | [docs.libretro.com/library/gearcoleco](https://docs.libretro.com/library/gearcoleco/) |
+| blueMSX | [docs.libretro.com/library/bluemsx](https://docs.libretro.com/library/bluemsx/) |
+| GearColeco &nbsp; `default` | [docs.libretro.com/library/gearcoleco](https://docs.libretro.com/library/gearcoleco/) |
 
 ## Bios
 
