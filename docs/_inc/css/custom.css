@@ -5,7 +5,7 @@
   --md-primary-bg-color:               #eeeeee;
   --md-primary-bg-color--light:        #bbbbbb;
   /* Accent color shades */
-  --md-accent-fg-color:                #5998FF;
+  --md-accent-fg-color:                #FF5555;
   --md-accent-fg-color--transparent:   #cccccc;
   /* Default color shades */
   --md-default-fg-color:               #111111;
@@ -19,7 +19,7 @@
   /* Typeset color shades */
   --md-typeset-color:                  #111111;
   /* Typeset `a` color shades */
-  --md-typeset-a-color:                #5088e5;
+  --md-typeset-a-color:                #FF5555;
   /* Typeset `table` color shades */
   --md-typeset-table-color:            #cccccc;
   --md-typeset-table-color--light:     #eeeeee;
@@ -43,7 +43,7 @@
   --md-primary-bg-color:               #eeeeee;
   --md-primary-bg-color--light:        #bbbbbb;
   /* Accent color shades */
-  --md-accent-fg-color:                #5998FF;
+  --md-accent-fg-color:                #FF5555;
   --md-accent-fg-color--transparent:   #333333;
   /* Default color shades */
   --md-default-fg-color:               #eeeeee;
@@ -57,7 +57,7 @@
   /* Typeset color shades */
   --md-typeset-color:                  #eeeeee;
   /* Typeset `a` color shades */
-  --md-typeset-a-color:                #5998FF;
+  --md-typeset-a-color:                #FF5555;
   /* Typeset `table` color shades */
   --md-typeset-table-color:            #333333;
   --md-typeset-table-color--light:     #444444;
