@@ -23,7 +23,6 @@
 {%include 'controls/retroarch.md' %}
 {%set btn_prefix = 'F1' %}
 {%include 'controls/aethersx2.md' %}
-{%include 'controls/citra.md' %}
 {%set btn_save = 'R2' %}
 {%set btn_load = 'L2' %}
 {%set btn_menu = 'F1' %}
@@ -31,6 +30,7 @@
 {%set btn_swap_b = 'F2' %}
 {%include 'controls/drastic.md' %}
 {%include 'controls/dolphin.md' %}
+{%include 'controls/lime3ds.md' %}
 {%include 'controls/mupen64plus.md' %}
 {%include 'controls/ppsspp.md' %}
 {%include 'controls/yabasanshiro.md' %}
