@@ -60,7 +60,7 @@ Under the following terms:
 
 ### ROCKNIX Software
 
-Copyright 2023 ROCKNIX (https://github.com/ROCKNIX)
+Copyright 2024 ROCKNIX [(https://github.com/ROCKNIX)](https://github.com/ROCKNIX)
 
 Original software and scripts developed by the ROCKNIX team are licensed under the terms of the [GNU GPL Version 2](https://choosealicense.com/licenses/gpl-2.0/).  The full license can be found in this project's licenses folder.
 
