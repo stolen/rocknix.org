@@ -8,7 +8,7 @@ When modifying individual packages, it's useful to regularly verify the build-ab
 
 ``` bash linenums="1"
 make docker-shell
-export PROJECT=PC DEVICE=AMD64 ARCH=x86_64
+export PROJECT=Rockchip DEVICE=RK3588 ARCH=aarch64
 ./scripts/clean busybox
 ./scripts/build busybox
 exit
@@ -31,9 +31,9 @@ mv wireguard-linux-compat-v1.0.20211208 wireguard-linux-compat
 cp -rf wireguard-linux-compat wireguard-linux-compat.orig
 
 # Make your changes to wireguard-linux-compat
-mkdir -p ../../packages/network/wireguard-linux-compat/patches/AMD64
+mkdir -p ../../packages/network/wireguard-linux-compat/patches/RK3588
 # run from the sources dir
-diff -rupN wireguard-linux-compat wireguard-linux-compat.orig >../../packages/network/wireguard-linux-compat/patches/AMD64/mychanges.patch
+diff -rupN wireguard-linux-compat wireguard-linux-compat.orig >../../packages/network/wireguard-linux-compat/patches/RK3588/mychanges.patch
 ```
 
 ## Creating a Patch for a Package Using git
@@ -63,7 +63,7 @@ make docker-shell
 vim/emacs/vscode/notepad.exe
 
 export OS_VERSION=$(date +%Y%m%d) BUILD_DATE=$(date)
-export PROJECT=PC DEVICE=AMD64 ARCH=x86_64
+export PROJECT=Rockchip DEVICE=RK3588 ARCH=aarch64
 ./scripts/clean emulationstation
 ./scripts/build emulationstation
 ./scripts/install emulationstation

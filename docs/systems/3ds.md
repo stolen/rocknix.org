@@ -10,8 +10,7 @@
 
 | Name | Platform | Documentation |
 | --- | --- | --- |
-| Lime3DS | AMD64 | [docs.libretro.com/library/citra](https://docs.libretro.com/library/citra/) |
-| Lime3DS (SA) | AMD64, S922X | [https://github.com/Lime3DS/Lime3DS](https://github.com/Lime3DS/Lime3DS) |
+| Lime3DS (SA) | S922X | [https://github.com/Lime3DS/Lime3DS](https://github.com/Lime3DS/Lime3DS) |
 
 ## AES Keys
 

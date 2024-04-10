@@ -160,7 +160,6 @@ Building ROCKNIX is easy.  From the root of your local repository, issue one of 
 
 | Devices | Dependency | Docker Command | Manual Command |
 | ---- | ---- | ---- | ---- |
-|AMD64||`make docker-AMD64`|`make AMD64`|
 |RK3588||`make docker-RK3588`|`make RK3588`|
 |RK3326||`make docker-RK3326`|`make RK3326`|
 |RK3566||`make docker-RK3566`|`make RK3566`|
@@ -170,10 +169,10 @@ Building ROCKNIX is easy.  From the root of your local repository, issue one of 
 
 > Devices that list a dependency require you to build the dependency first, since that build will be used as the root of the device you are building.
 
-For example, the following command uses Docker to build the AMD64 image.  
+For example, the following command uses Docker to build the RK3588 image.  
 
 ``` bash
-make docker-AMD64
+make docker-RK3588
 ```
 
 ### Rightsized Builds
@@ -234,7 +233,7 @@ export CHEEVOS_DEV_LOGIN="z=RETROACHIEVEMENTSUSERNAME&y=APIKEYID"
 
 ``` bash
 make docker-shell
-CLEAN_PACKAGES="linux ppsspp-sa" make AMD64
+CLEAN_PACKAGES="linux ppsspp-sa" make RK3588
 exit
 ```
 The first and last lines should be omitted if building outside of Docker.
@@ -256,23 +255,22 @@ Use this table to determine the values you should use in the above command:
 
 | For Build | PROJECT | DEVICE | ARCH |
 | ---- | ---- | ---- | ---- |
-| AMD64 | PC | AMD64 | x86_64 |
 | RK3588 | Rockchip | RK3588 | aarch64 |
 | RK3326 | Rockchip | RK3326 | aarch64 |
 | RK3566 | Rockchip | RK3566 | aarch64 |
 | RK3566-X55 | Rockchip | RK3566-X55 | aarch64 |
 | S922X | Amlogic | S922X | aarch64 |
 
-As an example; if you were buildling `AMD64` and wanted to clean the `mame-lr` package:
+As an example; if you were buildling `RK3588` and wanted to clean the `mame-lr` package:
 ``` bash
-PROJECT=PC DEVICE=AMD64 ARCH=x86_64 ./scripts/clean mame-lr
+PROJECT=Rockchip DEVICE=RK3588 ARCH=aarch64 ./scripts/clean mame-lr
 ```
 
 After cleaning a package you can try to build/install it directly as a quick way to see if the error is resolved.  Just change the script to `install` or `build` depending on what the package requires.
 
-Using our example above (e.g. building for AMD64) mame-lr requires `install` so you can run this command to check it directly
+Using our example above (e.g. building for RK3588) mame-lr requires `install` so you can run this command to check it directly
 ``` bash
-PROJECT=PC DEVICE=AMD64 ARCH=x86_64 ./scripts/install mame-lr
+PROJECT=Rockchip DEVICE=RK3588 ARCH=aarch64 ./scripts/install mame-lr
 ```
 
 If that completes without error then running the build for your device should proceed.

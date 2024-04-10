@@ -18,7 +18,7 @@ If you device does not have access to the internet you can still update manually
 
 1. Download the latest update (.tar) of ROCKNIX for your device from the [releases page](https://github.com/ROCKNIX/distribution/releases/latest).
 	* You'll find download links for each device/platform we support under the "`Update Package Downloads`" header.
-    * Make sure to download the correct .tar file for your device.  For example; if you are installing ROCKNIX on a [Loki Zero](../devices/ayn/loki-zero.md) you would download the `ROCKNIX-AMD64` file.
+    * Make sure to download the correct .tar file for your device.  For example; if you are installing ROCKNIX on a [Gameforce Ace](../devices/gameforce/gameforce-ace.md) you would download the `ROCKNIX-RK3588` file.
     * If you have any questions you can check the [Device Support](../devices/index.md) section to confirm which .tar you should download for your specific device.
 2. Copy the update to your device's update share.
 3. Reboot the device, and the update will begin automatically.

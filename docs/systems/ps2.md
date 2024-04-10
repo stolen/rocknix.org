@@ -10,8 +10,6 @@
 
 | Name | Platform | Documentation |
 | --- | --- | --- |
-| PCSX2 (Stand Alone) | AMD64 | [pcsx2.net](https://pcsx2.net) |
-| LRPS2 | AMD64 | [docs.libretro.com/library/pcsx2](https://docs.libretro.com/library/pcsx2) |
 | AetherSX2 | RK3588, S922X, RK3399 | [www.aethersx2.com/archive](https://www.aethersx2.com/archive/) |
 
 ## Bios

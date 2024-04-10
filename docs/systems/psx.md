@@ -10,9 +10,8 @@
 
 | Name | Platform | Documentation |
 | --- | --- | --- |
-| Beetle PSX | AMD64, S922X, RK3399, RK3588 | [docs.libretro.com/library/beetle_psx](https://docs.libretro.com/library/beetle_psx/) |
-| DuckStation (Stand Alone) | AMD64, S922X, RK3399, RK3588, RK3566 | [github.com/stenzek/duckstation](https://github.com/stenzek/duckstation) |
-| PSX (Mednafen) | AMD64 | [mednafen.github.io/documentation/psx.html](https://mednafen.github.io/documentation/psx.html) |
+| Beetle PSX | S922X, RK3399, RK3588 | [docs.libretro.com/library/beetle_psx](https://docs.libretro.com/library/beetle_psx/) |
+| DuckStation (Stand Alone) | S922X, RK3399, RK3588, RK3566 | [github.com/stenzek/duckstation](https://github.com/stenzek/duckstation) |
 | PCSX ReARMed | S922X, RK3399, RK3588, RK3566, RK3326 | [docs.libretro.com/library/pcsx_rearmed](https://docs.libretro.com/library/pcsx_rearmed/) |
 | PCSX ReARMed 32 | RK3399, RK3588, RK3566, RK3326 | [docs.libretro.com/library/pcsx_rearmed](https://docs.libretro.com/library/pcsx_rearmed/) |
 | DuckStation | All | [github.com/stenzek/duckstation](https://github.com/stenzek/duckstation) |

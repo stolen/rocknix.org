@@ -43,7 +43,7 @@ Using this data, we will create a match rule to match our panel struct in drm_pa
 }
 ```
 
-Save, and build your patch following the instructions [here](modify.md). Place your patch in `packages/kernel/linux/patches/AMD64` or the appropriate device directory, and run a test build.
+Save, and build your patch following the instructions [here](modify.md). Place your patch in `packages/kernel/linux/patches/RK3588` or the appropriate device directory, and run a test build.
 
 !!! note "DMI_EXACT_MATCH or DMI_MATCH can be used.  DMI_EXACT_MATCH is as implied, an exact match.  DMI_MATCH will match that any device where its DMI data includes "AIR Plus""
 

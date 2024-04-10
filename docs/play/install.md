@@ -6,7 +6,7 @@ ROCKNIX is installed by downloading an image for your device, flashing it to an 
 
 * Download the latest version of ROCKNIX for your device from the [releases page](https://github.com/ROCKNIX/distribution/releases/latest).
     * You'll find download links for each device/platform we support under the "`Installation Package Downloads`" header.
-    * Make sure to download the correct image for your device.  For example; if you are installing ROCKNIX on a [Loki Zero](../devices/ayn/loki-zero.md) you would download the `ROCKNIX-AMD64` image.
+    * Make sure to download the correct image for your device.  For example; if you are installing ROCKNIX on a [Gameforce Ace](../devices/gameforce/gameforce-ace.md) you would download the `ROCKNIX-RK3588` image.
     * If you have any questions you can check the [Device Support](../devices/index.md) section to confirm which image you should download for your specific device.
 
 ## Step 2: Flash
