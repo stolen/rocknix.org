@@ -114,7 +114,7 @@ Distributions contains distribution-specific build flags and parameters and spla
 
 **Dockerfile**
 
-Used to build the Ubuntu container used to build ROCKNIX.  The container is hosted at [https://hub.docker.com/u/justenoughlinuxos](https://hub.docker.com/u/justenoughlinuxos).
+Used to build the Ubuntu container used to build ROCKNIX.  The container is hosted at [https://hub.docker.com/u/rocknix](https://hub.docker.com/u/rocknix).
 
 **licenses**
 

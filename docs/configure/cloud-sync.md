@@ -78,7 +78,7 @@ For any questions and advanced configuration, be sure to check out the full docu
 
 Using Rclone is easy, however configuration must be performed manually before it will function correctly.
 
-rclone.cfg is stored in `/storage/.config/rclone/rclone.conf` and can be copied from another device but only after the destination device has booted into Jelos (so copy to secondary sd, boot device, launch 351files, copy from there to proper path above)
+rclone.cfg is stored in `/storage/.config/rclone/rclone.conf` and can be copied from another device but only after the destination device has booted into ROCKNIX (so copy to secondary sd, boot device, launch 351files, copy from there to proper path above)
 
 ### Setup Rclone
 #### Credentialed Access
@@ -164,7 +164,7 @@ and press `enter`
 
 Note the version number, which is required for a later step
 
-![Rclone version installed in ROCKNIX](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20version.png)
+![Rclone version installed in ROCKNIX](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20version.png)
 
 Now type
 ```
@@ -181,11 +181,11 @@ type in a name for the site (use a name without spaces), then press `enter`
 
 > don’t include spaces in the site’s name. Rclone does allow names that include spaces, but rsync will fail if a site name with spaces is used in the cloud backup script.
 
-![Type: rclone config](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config.png)
+![Type: rclone config](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config.png)
 
 Choose from the list of cloud providers that is displayed. For Dropbox, type `12` and `enter` in this example
 
-![Select cloud provider](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config%20select%20dropbox.png)
+![Select cloud provider](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20select%20dropbox.png)
 
 *The next options displayed are slightly different from the Dropbox example on rclone website*
 
@@ -193,15 +193,15 @@ For client_id and client_secret press `enter` and `enter` to skip, or read [Rclo
 
 Type `n` to skip editing the advanced config
 
-![Skip Client ID, secret and advanced config](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config%20client%20id.png)
+![Skip Client ID, secret and advanced config](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20client%20id.png)
 
 For auto config, select `n` for remote or headless machine (i.e. ROCKNIX device that doesn't have a web browser)
 
-![No auto-config for remote or headless machine](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config%20remote%20machine.png)
+![No auto-config for remote or headless machine](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20remote%20machine.png)
 
 Instructions are provided explaining how to authorize the connection from the remote device to the cloud service
 
-![Device with web-browser is required for authorization](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config%20authorize%20and%20paste%20token.png)
+![Device with web-browser is required for authorization](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20authorize%20and%20paste%20token.png)
 
 #### Install and run rclone on machine with a web-browser to authorize connection to cloud service
 
@@ -219,15 +219,15 @@ rclone authorize dropbox
 
 and press `enter`
 
-![Authorize dropbox for rclone](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/rclone%20authorise%20dropbox.png)
+![Authorize dropbox for rclone](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/rclone%20authorise%20dropbox.png)
 
 Rclone will launch a web page to enable login to the cloud service and authorization of the connection
 
-![Authorize dropbox for rclone](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/rclone%20authorise%20from%20pc.png)
+![Authorize dropbox for rclone](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/rclone%20authorise%20from%20pc.png)
 
 After successful authorization, the terminal window will display the authorization token that needs to be pasted into ROCKNIX ssh
 
-![Copy authorization token](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/rclone%20authorise%20login%20then%20paste%20into%20remote%20ssh.png)
+![Copy authorization token](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/rclone%20authorise%20login%20then%20paste%20into%20remote%20ssh.png)
 
 Copy the entire token
 
@@ -235,7 +235,7 @@ Copy the entire token
 
 Paste authorization token into ROCKNIX command prompt, then type `y` to confirm that the remote connection is correct
 
-![Paste authorization token into ssh](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config%20authorize%20and%20paste%20token.png)
+![Paste authorization token into ssh](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20authorize%20and%20paste%20token.png)
 
 The connection is now configured and can be tested (`q` to quit rclone config)
 
@@ -250,4 +250,4 @@ where `rg503` is the name of the remote connection (rclone example names the rem
 
 The names of the top-level folders within Dropbox cloud service will be displayed
 
-![Dropbox folder names are displayed](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20list%20top-level%20directories%20on%20dropbox.png)
+![Dropbox folder names are displayed](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20list%20top-level%20directories%20on%20dropbox.png)

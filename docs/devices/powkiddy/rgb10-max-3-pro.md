@@ -55,8 +55,8 @@ Download the latest `S922X-Odroid_GOU` version of ROCKNIX from the button below.
 
 !!! note "ROCKNIX must be flashed directly onto the RGB10 Max 3 Pro rather than an SD card.  This is done by putting the device into recovery mode, per the manual by holding down R2, L2, and power. A video demonstation [is shown here](https://youtu.be/X9wbPY5qf6o?t=1195)."
 
-[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
-[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
 
 ### Troubleshooting
 

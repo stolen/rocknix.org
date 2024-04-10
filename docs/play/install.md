@@ -2,7 +2,7 @@
 
 ROCKNIX is installed by downloading an image for your device, flashing it to an SD Card (or your device's internal storage) and then booting the device to start the install process.
 
-## Step 1: Download [![Latest](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)[![Latest](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
+## Step 1: Download [![Latest](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)[![Latest](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
 
 * Download the latest version of ROCKNIX for your device from the [releases page](https://github.com/ROCKNIX/distribution/releases/latest).
     * You'll find download links for each device/platform we support under the "`Installation Package Downloads`" header.
