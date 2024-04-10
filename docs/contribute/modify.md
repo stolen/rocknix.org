@@ -1,6 +1,6 @@
-# :material-cube-unfolded: Modifying JELOS
+# :material-cube-unfolded: Modifying ROCKNIX
 
-Before modifying JELOS, be sure you can successfully [build](build.md) the unmodified `main` or `dev` branch.  Establish a baseline of success before introducing changes to the JELOS source.
+Before modifying ROCKNIX, be sure you can successfully [build](build.md) the unmodified `main` or `dev` branch.  Establish a baseline of success before introducing changes to the ROCKNIX source.
 
 ## Building a Single Package
 
@@ -18,7 +18,7 @@ PROJECT is one of `Amlogic`, `PC`, or `Rockchip` (i.e. the subdirectories of the
 
 !!! note "The first and last lines should be omitted if building outside of Docker."
 
-!!! info "If you are interested in an EmulationStation package build it requires additional steps because its source code is located in a separate repository.  Please see instructions [here](https://github.com/JustEnoughLinuxOS/distribution/blob/main/packages/ui/emulationstation/package.mk#L39)."
+!!! info "If you are interested in an EmulationStation package build it requires additional steps because its source code is located in a separate repository.  Please see instructions [here](https://github.com/ROCKNIX/distribution/blob/main/packages/ui/emulationstation/package.mk#L39)."
 
 ## Creating a Patch for a Package
 
@@ -78,7 +78,7 @@ exit
 
 You can of course reflash the SD card with the modified image.
 
-Alternatively, you may install the image through the JELOS update mechanism, which retains your ES and emulator settings.  If the device is networked and reachable from the build machine, this can be done as follows.
+Alternatively, you may install the image through the ROCKNIX update mechanism, which retains your ES and emulator settings.  If the device is networked and reachable from the build machine, this can be done as follows.
 
 ``` bash linenums="1"
 # Replace with your device values
@@ -90,13 +90,13 @@ ARCH=aarch64
 TIMESTAMP=$(date -u +%Y%m%d)
 
 SSH_OPTS="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
-scp ${SSH_OPTS} ~/distribution/release/JELOS-${DEVICE}.${ARCH}-${TIMESTAMP}.tar root@${HOST}:~/.update && \
+scp ${SSH_OPTS} ~/distribution/release/ROCKNIX-${DEVICE}.${ARCH}-${TIMESTAMP}.tar root@${HOST}:~/.update && \
     ssh ${SSH_OPTS} root@{HOST} reboot
 ```
 
 ## Common File Locations
 
-Below is a reference for the locations of files you may frequently interact with while modifying JELOS
+Below is a reference for the locations of files you may frequently interact with while modifying ROCKNIX
 
 | File &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Location | Description |
 | -- | -- | -- |
@@ -104,13 +104,13 @@ Below is a reference for the locations of files you may frequently interact with
 | busybox package | packages/sysutils/busybox |  |
 | init | packages/sysutils/busybox/scripts/init |  |
 | kernel config | projects/Rockchip/devices/RK3566-ML/linux/linux.aarch64.conf |  |
-| running kernel config | build.JELOS-RK3566-ML.aarch64/linux-6.5-rc7/.config |  |
+| running kernel config | build.ROCKNIX-RK3566-ML.aarch64/linux-6.5-rc7/.config |  |
 | boot.scr | projects/Rockchip/devices/RK3566/boot/boot.scr |  |
 | uboot package.mk | projects/Rockchip/packages/u-boot/package.mk |  |
 | uboot | sources/u-boot/u-boot-976fb2f |  |
 | uboot config | sources/u-boot/u-boot-976fb2f/configs/anbernic-rgxx3-rk3566_defconfig |  |
 | dts sources | sources/u-boot/u-boot-976fb2f/arch/arm/dts/rk3566-anbernic-rgxx3.dts |  |
-| kernel sources/build | build.JELOS-RK3566-ML.aarch64/linux-6.6-rc3 |  |
+| kernel sources/build | build.ROCKNIX-RK3566-ML.aarch64/linux-6.6-rc3 |  |
 | final.img | releases |  |
 | $EXTRA_CMDLINE | projects/Rockchip/devices/RK3566-ML/options |  |
 | $INSTALL | /config $BUILD/image/system, /scripts ${BUILD}/initramfs |  |

@@ -1,6 +1,6 @@
-# :material-layers-plus: Adding Games to JELOS
+# :material-layers-plus: Adding Games to ROCKNIX
 
-JELOS has a few options for adding games and the option you choose will depend on the device you have and its available functionality *(For example, some devices do not have networking capabilites so those devices will not be able to use the network transfer option)*.  To create the default set of game directories on your device, choose the 'CREATE GAME DIRECTORIES' option in the System Settings menu.
+ROCKNIX has a few options for adding games and the option you choose will depend on the device you have and its available functionality *(For example, some devices do not have networking capabilites so those devices will not be able to use the network transfer option)*.  To create the default set of game directories on your device, choose the 'CREATE GAME DIRECTORIES' option in the System Settings menu.
 
 This page will aim to document all possible options and indicate when you might use a given one over another.
 
@@ -8,11 +8,11 @@ This page will aim to document all possible options and indicate when you might 
 
 ## Storage Modes
 
-JELOS has support for using internal and external storage (microsd) for games.  To make games available in the OS we provide different features based on the capability of the filesystem that you are using.  To support our storage modes JELOS nests games into a directory on your games card called "roms".  All games found in this path will be available in the OS.
+ROCKNIX has support for using internal and external storage (microsd) for games.  To make games available in the OS we provide different features based on the capability of the filesystem that you are using.  To support our storage modes ROCKNIX nests games into a directory on your games card called "roms".  All games found in this path will be available in the OS.
 
 ### Merged Storage
 
-When using a microsd that is formatted as Ext4 (Linux), JELOS will present users with the ability to merge both the internal and external storage together allowing users to use both devices to store games.  This mode has two preferences, external (default), and internal.
+When using a microsd that is formatted as Ext4 (Linux), ROCKNIX will present users with the ability to merge both the internal and external storage together allowing users to use both devices to store games.  This mode has two preferences, external (default), and internal.
 
 * Preference External
   * This mode will save anything written to `/storage/roms` to your external microsd (`/storage/games-external/roms`).
@@ -23,7 +23,7 @@ When using a microsd that is formatted as Ext4 (Linux), JELOS will present users
 
 ### Simple Storage
 
-When Merged Storage is disabled, or when you are using ExFAT or FAT32, JELOS will mount your external card to `/storage/games-external` and make the content of `/storage/games-external/roms` available at /storage/roms.
+When Merged Storage is disabled, or when you are using ExFAT or FAT32, ROCKNIX will mount your external card to `/storage/games-external` and make the content of `/storage/games-external/roms` available at /storage/roms.
 
 ### Troubleshooting
 
@@ -74,29 +74,29 @@ Games can also be added via an SD card.  There are 2 primary methods for this de
 
 - With your device turned off; insert a FAT32/ExFAT/ext4 formated SD card into slot 2 of your device.
 - Turn your device on.
-- When JELOS completes its boot process, create your game directories by selecting the `Create Game Directories` option in `System Settings`.
+- When ROCKNIX completes its boot process, create your game directories by selecting the `Create Game Directories` option in `System Settings`.
 - Now you can turn off your device, remove your SD card from slot 2 and open it on your PC.
 - You PC will display a list of folders, open the `roms` directory and you will see a list of folders for each system where you can place your games and bios files.
-- Add your games and place your SD card back into slot 2 and boot up JELOS.
+- Add your games and place your SD card back into slot 2 and boot up ROCKNIX.
 
 If your device does not see your SD card (or write the needed folders to it) please open `System Settings` and make sure `Autodetect Games Card` is turned on (located under the Hardware/Storage header) then reboot your device.
 
 ### If your device has 1 SD card slot
 
-!!! warning "This option is only for devices where you have installed JELOS to the internal drive of the device. In this scenario an SD card can be used directly for storage"
+!!! warning "This option is only for devices where you have installed ROCKNIX to the internal drive of the device. In this scenario an SD card can be used directly for storage"
 
-- With JELOS installed to your internal drive press ++"START"++ to open the Main Menu, then open `System Settings` and turn on `Autodetect Games Card` under the Hardware/Storage header.
+- With ROCKNIX installed to your internal drive press ++"START"++ to open the Main Menu, then open `System Settings` and turn on `Autodetect Games Card` under the Hardware/Storage header.
 - Turn your device off
 - Insert a FAT32/ExFAT/ext4 formated SD card into your device.
 - Turn your device on
-- When JELOS completes its boot process, create your game directories by selecting the `Create Game Directories` option in `System Settings`.
+- When ROCKNIX completes its boot process, create your game directories by selecting the `Create Game Directories` option in `System Settings`.
 - Now you can turn off your device, remove your SD card and open it on your PC.
 - You PC will display a list of folders, open the `roms` directory and you will see a list of folders for each system where you can place your games and bios files.
-- Add your games and place your SD card back into your device and boot up JELOS.
+- Add your games and place your SD card back into your device and boot up ROCKNIX.
 
 ## Option 3: External USB Drive
 
-JELOS has a built in File Manager and you can use it to access connected USB drives and transfer files. 
+ROCKNIX has a built in File Manager and you can use it to access connected USB drives and transfer files. 
 
 1. Connect your USB Drive to your device
 2. Open the Tools system and select File Manager
@@ -106,4 +106,4 @@ JELOS has a built in File Manager and you can use it to access connected USB dri
 
 ## Option 4: Linux OS
 
-JELOS' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into an linux OS will enable you to browse the directories and add files directly.
+ROCKNIX' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into an linux OS will enable you to browse the directories and add files directly.

@@ -1,6 +1,6 @@
 # :material-battery-plus: Optimizations
 
-JELOS provides a variety of settings that allow you to optimize for battery life or performance globally, on a per system and per game basis.  For emulating 6th generation and later systems, we recommend installing JELOS on internal storage if available to reduce IO bottlenecks reading and writing shader cache.
+ROCKNIX provides a variety of settings that allow you to optimize for battery life or performance globally, on a per system and per game basis.  For emulating 6th generation and later systems, we recommend installing ROCKNIX on internal storage if available to reduce IO bottlenecks reading and writing shader cache.
 
 ## Optimizing For Performance
 
@@ -14,7 +14,7 @@ Optimizing for performance will have significant impact on battery life, however
 |----|----|----|----|----|----|----|
 |All|Schedutil|Balanced Performance|Balanced|Off|Moderate<sup>1</sup> or Auto|Off|
 
-> Note: The JELOS team DOES NOT recommend the "BEST PERFORMANCE" GPU profile on AMD devices as it sets the profile_peak GPU profile which can lead to poor performance and kernel panics, use "BALANCED" instead.
+> Note: The ROCKNIX team DOES NOT recommend the "BEST PERFORMANCE" GPU profile on AMD devices as it sets the profile_peak GPU profile which can lead to poor performance and kernel panics, use "BALANCED" instead.
 
 ##### GLMark
 |DEVICE @ TDP|4w|6w|9w|15w|18w|24w|28w|
@@ -46,7 +46,7 @@ Optimizing for performance will have significant impact on battery life, however
 
 ## Optimizing For Battery Life
 
-JELOS includes an `Enhanced Power Saving` mode which is available in the `System Settings` menu.  This option provides a variety of sub options that when enabled tune your device for optimal battery life without immediately sacrificing performance.
+ROCKNIX includes an `Enhanced Power Saving` mode which is available in the `System Settings` menu.  This option provides a variety of sub options that when enabled tune your device for optimal battery life without immediately sacrificing performance.
 
 |Feature|Function|May Affect Stability|
 |----|----|----|
@@ -65,7 +65,7 @@ Enable Enhanced Power Saving, and enable all options.  If the device has undesir
 |----|----|----|----|----|----|----|
 |4|Powersave|Power Saving|Battery Focus|On|Quiet<sup>1</sup>|On|
 
-> JELOS recommends setting the minimum TDP that offers full performance for your game or system.
+> ROCKNIX recommends setting the minimum TDP that offers full performance for your game or system.
 
 ##### GLMark
 |DEVICE @ TDP|4w|6w|9w|15w|18w|24w|28w|

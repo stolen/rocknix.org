@@ -2,7 +2,7 @@
 
 ## Creating a custom shader preset
 
-JELOS supports adding custom shaders in addition to the built-in shaders available in the "Advanced Game Options" and "Game Settings / Per System Advanced Configuration" settings "shader set" selection.
+ROCKNIX supports adding custom shaders in addition to the built-in shaders available in the "Advanced Game Options" and "Game Settings / Per System Advanced Configuration" settings "shader set" selection.
 
 ### Step 1: Launch a game and access the shaders menu in quick settings
 If Shaders are set to "off," change to "on" 
@@ -36,7 +36,7 @@ Select "Save" in the shaders menu.
 
 At the top of the list, set "Simple Presets" to off. Then choose "Save Shader Preset As" and name the shader. Press the enter key on the on-screen keyboard to save the preset. Exit Retroarch normally via the hotkey preset, or by backing out to the main menu and choosing "Quit Retroarch"
 
-### Step 4: Load your shader preset from JELOS menu
+### Step 4: Load your shader preset from ROCKNIX menu
 
 Browse into either "advanced game options" within game selection, or Main Menu -> Game Settings -> Per System Advanced Configuration.
 

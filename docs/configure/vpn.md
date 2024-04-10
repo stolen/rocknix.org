@@ -1,6 +1,6 @@
 # :material-check-network-outline: VPN Services
 
-JELOS has built in support for multiple VPN services.
+ROCKNIX has built in support for multiple VPN services.
 
 ## Tailscale
 
@@ -21,7 +21,7 @@ Tailscale works seamlessly with Linux, Windows, macOS, Raspberry Pi, Android, Sy
 
 ### Step 3: Add your device to your network
 
-JELOS Emulation Station has customized UI with Tailscale support.
+ROCKNIX Emulation Station has customized UI with Tailscale support.
 
 - Press "start" button to go into Emulation Station Main Menu.
 - Select Network Settings submenu.
@@ -45,11 +45,11 @@ The initial connection to Tailscale will require authentication.
 
 As game streaming becomes more popular, it enables AAA games, streamed over the internet from your home computer, to be played on your console while traveling.
 
-### Configuring WireGuard VPN in JELOS
-Typically the configuration involves copying your WireGuard VPN config file over to your JELOS device and then enabling WireGuard VPN in Emulation Station Network Settings menu.
+### Configuring WireGuard VPN in ROCKNIX
+Typically the configuration involves copying your WireGuard VPN config file over to your ROCKNIX device and then enabling WireGuard VPN in Emulation Station Network Settings menu.
 
 #### WireGuard Config
-JELOS uses standard WireGuard config file format. The file is typically provided by your VPN provider. If you want to host your own VPN Server on your local network, there are plenty of tutorials available online.
+ROCKNIX uses standard WireGuard config file format. The file is typically provided by your VPN provider. If you want to host your own VPN Server on your local network, there are plenty of tutorials available online.
 
 Currently only the single connection is supported. The WireGuard config file must be placed in the following location - `/storage/.config/wireguard/wg0.conf`. Please use SSH or Samba to create the file there.
 
@@ -71,7 +71,7 @@ Endpoint = <server>:<port>
 #### Enabling WireGuard connection
 Emulation Station now has a new menu item toggle to enable or disable WireGuard VPN connection. Use it turn the connection on or off.
 
-> Note: make sure that WireGuard config file is present on the device, see the Configuring WireGuard VPN in JELOS section above. The menu option is only available when the config file is present.
+> Note: make sure that WireGuard config file is present on the device, see the Configuring WireGuard VPN in ROCKNIX section above. The menu option is only available when the config file is present.
 
 Connect to configured VPN server
 * Press "start" button to go into Emulation Station Main Menu
@@ -182,7 +182,7 @@ It's most likely going to run everywhere you want it, since the software exists 
 
 ### Step 3: Add your device to your network
 
-JELOS Emulation Station has customized UI with ZeroTier support.
+ROCKNIX Emulation Station has customized UI with ZeroTier support.
 
 - Create a file called "zerotier-networks" in ```/storage/.config/zerotier-networks```, containing one network ID per line
 - Press "start" button to go into Emulation Station Main Menu.
@@ -196,4 +196,4 @@ You can also use the traditional way of adding a network ID by using ```zerotier
 
 ### Links
 * ZeroTier homepage [link](https://zerotier.com/)
-* Script used to add networks on start [link](https://github.com/JustEnoughLinuxOS/distribution/blob/dev/packages/network/zerotier-one/scripts/zerotier-join.sh)
+* Script used to add networks on start [link](https://github.com/ROCKNIX/distribution/blob/dev/packages/network/zerotier-one/scripts/zerotier-join.sh)

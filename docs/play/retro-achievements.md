@@ -1,6 +1,6 @@
 # :fontawesome-solid-medal: Retro Achievements
 
-JELOS has a native integration with [RetroAchievements](https://retroachievements.org/) which allows you to earn achievements as you play games across numerous emulators. In order to use RetroAchievements your device must be connected to the internet.
+ROCKNIX has a native integration with [RetroAchievements](https://retroachievements.org/) which allows you to earn achievements as you play games across numerous emulators. In order to use RetroAchievements your device must be connected to the internet.
 
 ## Setup
 

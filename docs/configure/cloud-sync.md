@@ -1,44 +1,44 @@
 # :material-cloud-sync: Cloud Sync
 
-JELOS has built in support for multiple cloud sync options.  These can be used to sync save files, games and other files between multiple devices. 
+ROCKNIX has built in support for multiple cloud sync options.  These can be used to sync save files, games and other files between multiple devices. 
 
 ## Syncthing
 
 Syncthing is a tool that lets you synchronize the contents of folders across multiple devices. It is different from cloud storage in that devices are updated directly with the latest changes from their peer(s) whenever they are online at the same time.
-Some things you can use it for with JELOS:
+Some things you can use it for with ROCKNIX:
 
-* Keep your game library synchronized between your computer and JELOS device(s),
+* Keep your game library synchronized between your computer and ROCKNIX device(s),
 * Keep all your handhelds synchronized (including those that run Android),
 * Copy savegames as they are created and seamlessly continue playing on another device,
 * Keep a copy of your configuration files for easier editing.
 
 ### Setup
 
-#### Setup on JELOS
+#### Setup on ROCKNIX
 * Make sure you are connected to a WiFi network before continuing.
 * Go to "Network Settings" and set "Enable Syncthing" to "on". Make a note of your device's IP address, as well as the root password in the System Settings menu.
-* On a computer or mobile device in the same network, open a browser and point it to "http://a.b.c.d:8384" where "a.b.c.d" is the IP address of your JELOS device.
+* On a computer or mobile device in the same network, open a browser and point it to "http://a.b.c.d:8384" where "a.b.c.d" is the IP address of your ROCKNIX device.
 * When prompted for a user name and password, enter "root" as user and the password you noted earlier.
-* You should now be directed to a configuration page running on your JELOS device - we'll come back to this shortly.
+* You should now be directed to a configuration page running on your ROCKNIX device - we'll come back to this shortly.
 
 #### Setup on Peer(s)
 
-Install Syncthing on the device or computer that you want to synchronize with your JELOS device. If your other device also runs JELOS, simply repeat the above steps. Otherwise go to https://syncthing.net to download Syncthing for your platform. You may also find it in your Linux distribution's package manager, the Android Play Store, etc. Generally it is not required to install the same version of Syncthing on all devices. You can synchronize a folder across any number of peers.
+Install Syncthing on the device or computer that you want to synchronize with your ROCKNIX device. If your other device also runs ROCKNIX, simply repeat the above steps. Otherwise go to https://syncthing.net to download Syncthing for your platform. You may also find it in your Linux distribution's package manager, the Android Play Store, etc. Generally it is not required to install the same version of Syncthing on all devices. You can synchronize a folder across any number of peers.
 
 #### Connecting Folders
 
-1. Go to the web interface of your JELOS device (see above). Don't worry about notices about upgrading or the file system being read-only, nothing you can do.
-(Note: You can also go to the web interface of any of the peers, it'll work the same - but for this documentation it is assumed that you're on a JELOS device.)
-2. Under "Remote Devices", click "Add Remote Device". Enter the Device ID of the peer you want to synchronize with. If the remote is in the same network as your JELOS device the ID will be shown automatically. Otherwise, you'll find it in the remote's web interface by clicking "Actions" at the top and then "Show ID". Give the device a name if you like.
+1. Go to the web interface of your ROCKNIX device (see above). Don't worry about notices about upgrading or the file system being read-only, nothing you can do.
+(Note: You can also go to the web interface of any of the peers, it'll work the same - but for this documentation it is assumed that you're on a ROCKNIX device.)
+2. Under "Remote Devices", click "Add Remote Device". Enter the Device ID of the peer you want to synchronize with. If the remote is in the same network as your ROCKNIX device the ID will be shown automatically. Otherwise, you'll find it in the remote's web interface by clicking "Actions" at the top and then "Show ID". Give the device a name if you like.
 3. In the "Folders" section, click "Add Folder". In the popup window that opens, set a label and specify the path on the device (e.g. /storage/roms). This is the folder you will be sharing with other peers.
 4. In the same popup window, go to the "Sharing" tab and select the remote device you just set up. Optionally, go to the "Ignore Patterns" tab and configure those. Click "Save" to close the window.
 5. On the remote's interface you should receive a popup that a new device wants to connect. Click "Add Device" and then "Save" to accept. It should now show up under "Remote Devices".
-6. Still on the remote, you should receive a new popup saying that the JELOS device wants to share a folder. Click "Add", then in the popup window, specify the path to an empty local folder to store the synchronized contents. Click "Save".
-7. The folder should now be copied from the JELOS device to the remote.
+6. Still on the remote, you should receive a new popup saying that the ROCKNIX device wants to share a folder. Click "Add", then in the popup window, specify the path to an empty local folder to store the synchronized contents. Click "Save".
+7. The folder should now be copied from the ROCKNIX device to the remote.
 
 #### Adding more Peers
 
-* To share the folder with more peers, first follow step 2 on your JELOS device to add another remote.
+* To share the folder with more peers, first follow step 2 on your ROCKNIX device to add another remote.
 * Find the folder you want to add another peer to and click "Edit".
 * In the popup window, go to the "Sharing" tab. The new remote should appear as an option. Select it and then click "Save".
 * Follow steps 5 and 6 on the new remote to connect the folder.
@@ -96,10 +96,10 @@ Now that you're connected you will need to configure Rclone.  This process is me
 * [Rclone Provider Documentation](https://rclone.org/#providers)
 * [Rclone Headless Configuration](https://rclone.org/remote_setup/)
 
-[See detailed setup example below](https://github.com/JustEnoughLinuxOS/distribution/documentation/SETUP_CLOUD_DRIVES.md#setting-up-rclone-detailed-example) 
+[See detailed setup example below](https://github.com/ROCKNIX/distribution/documentation/SETUP_CLOUD_DRIVES.md#setting-up-rclone-detailed-example) 
 
 ### Using Rclone
-In JELOS you are able to mount your cloud drive like any other storage device, as long as you are network connected.  To mount your cloud drive, press Start, select Network Settings, and then select the Mount Cloud Drive option.  This drive is available on /storage/cloud by default, and is accessible from ssh and from 351Files.  To mount the cloud drive over ssh use ```rclonectl mount``` to mount the drive and ```rclonectl unmount``` to unmount it.
+In ROCKNIX you are able to mount your cloud drive like any other storage device, as long as you are network connected.  To mount your cloud drive, press Start, select Network Settings, and then select the Mount Cloud Drive option.  This drive is available on /storage/cloud by default, and is accessible from ssh and from 351Files.  To mount the cloud drive over ssh use ```rclonectl mount``` to mount the drive and ```rclonectl unmount``` to unmount it.
 
 > Note: Mounting the cloud drive is not persistent, you will need to select it before use.
 
@@ -154,7 +154,7 @@ This example configures rclone to use Dropbox
 
 Rclone provide detailed examples for connecting to all supported cloud servers, including [Rclone Dropbox example](https://rclone.org/dropbox/)
 
-#### Configure cloud backup connection on JELOS device using ssh
+#### Configure cloud backup connection on ROCKNIX device using ssh
 From the terminal command line type
 ```
 rclone version
@@ -164,7 +164,7 @@ and press `enter`
 
 Note the version number, which is required for a later step
 
-![Rclone version installed in JELOS](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20version.png)
+![Rclone version installed in ROCKNIX](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20version.png)
 
 Now type
 ```
@@ -195,7 +195,7 @@ Type `n` to skip editing the advanced config
 
 ![Skip Client ID, secret and advanced config](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config%20client%20id.png)
 
-For auto config, select `n` for remote or headless machine (i.e. JELOS device that doesn't have a web browser)
+For auto config, select `n` for remote or headless machine (i.e. ROCKNIX device that doesn't have a web browser)
 
 ![No auto-config for remote or headless machine](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config%20remote%20machine.png)
 
@@ -209,7 +209,7 @@ Download rclone on a device with a web-browser so rclone can use a web-page to a
 
 [Rclone download server](https://downloads.rclone.org/)
 
-> Download the same version of rclone as is installed on JELOS device, as noted above.
+> Download the same version of rclone as is installed on ROCKNIX device, as noted above.
 
 Use terminal window (e.g. `CMD` on Windows) to browse to rclone executable and run 
 
@@ -225,15 +225,15 @@ Rclone will launch a web page to enable login to the cloud service and authoriza
 
 ![Authorize dropbox for rclone](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/rclone%20authorise%20from%20pc.png)
 
-After successful authorization, the terminal window will display the authorization token that needs to be pasted into JELOS ssh
+After successful authorization, the terminal window will display the authorization token that needs to be pasted into ROCKNIX ssh
 
 ![Copy authorization token](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/rclone%20authorise%20login%20then%20paste%20into%20remote%20ssh.png)
 
 Copy the entire token
 
-#### Update JELOS with authorization token
+#### Update ROCKNIX with authorization token
 
-Paste authorization token into JELOS command prompt, then type `y` to confirm that the remote connection is correct
+Paste authorization token into ROCKNIX command prompt, then type `y` to confirm that the remote connection is correct
 
 ![Paste authorization token into ssh](https://raw.githubusercontent.com/JustEnoughLinuxOS/distribution/gh-pages/images/ssh%20rclone%20config%20authorize%20and%20paste%20token.png)
 

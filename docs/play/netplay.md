@@ -1,6 +1,6 @@
 # :material-vector-link: Network Play
 
-RetroArch network play for up to 4 players is available across all WIFI enabled devices supported by JELOS.  Before continuing, please make sure that all devices are updated to the same version of the operating system.
+RetroArch network play for up to 4 players is available across all WIFI enabled devices supported by ROCKNIX.  Before continuing, please make sure that all devices are updated to the same version of the operating system.
 
 ## Video Guide
 
@@ -38,7 +38,7 @@ Using this feature is simple.  For LAN based play, connect your devices to your 
 
 ## Option 2: Device to Device Network Play
 
-Device to device connections will automatically generate and connect to a local WIFI network.  As with LAN based play, one host and one client are required for play.  Using the same version of JELOS on each device is REQUIRED or devices will not connect.  Device to device connections are intended for local play only, retroAchievements, scraping, and system updates will not be available in this mode.
+Device to device connections will automatically generate and connect to a local WIFI network.  As with LAN based play, one host and one client are required for play.  Using the same version of ROCKNIX on each device is REQUIRED or devices will not connect.  Device to device connections are intended for local play only, retroAchievements, scraping, and system updates will not be available in this mode.
 
 ### Device to Device Play (HOST)
 
@@ -60,7 +60,7 @@ Device to device connections will automatically generate and connect to a local 
 
 ## Option 3: GameBoy GameLink
 
-JELOS supports GameLink play for GameBoy and GameBoy Color.  To use, on each device select the appropriate core for the game being started in advanced settings for the game, or for the system.
+ROCKNIX supports GameLink play for GameBoy and GameBoy Color.  To use, on each device select the appropriate core for the game being started in advanced settings for the game, or for the system.
 
 | Core | Features |
 | -- | -- |

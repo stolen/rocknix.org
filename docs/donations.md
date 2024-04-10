@@ -1,6 +1,6 @@
 # :material-charity: Donations
 
-Thank you for your interest in donating to JELOS! We don't accept financial contributions. If you would like to volunteer or contribute in some way to our project, please read our [Code of Conduct](contribute/code-of-conduct.md) and [Contributing to JELOS](contribute/index.md) guides.  You are also encouraged to join us on Discord to learn and collaborate with us.
+Thank you for your interest in donating to ROCKNIX! We don't accept financial contributions. If you would like to volunteer or contribute in some way to our project, please read our [Code of Conduct](contribute/code-of-conduct.md) and [Contributing to ROCKNIX](contribute/index.md) guides.  You are also encouraged to join us on Discord to learn and collaborate with us.
 
 ## Why Don't You Accept Donations?
 
@@ -18,9 +18,9 @@ Our GitHub runners are the nodes we use to build and push releases to GitHub. Tr
 
 ## Project and Web Hosting
 
-GitHub serves our release packages, as well as our WIKI.  Our domain, [jelos.org](https://jelos.org) is hosted with GitHub pages and powered by [MkDocs + Material](https://squidfunk.github.io/mkdocs-material/).  Currently, JELOS does not take advantage of any functionality that requires a paid GitHub plan.
+GitHub serves our release packages, as well as our WIKI.  Our domain, [rocknix.org](https://rocknix.org) is hosted with GitHub pages and powered by [MkDocs + Material](https://squidfunk.github.io/mkdocs-material/).  Currently, ROCKNIX does not take advantage of any functionality that requires a paid GitHub plan.
 
 | Project | URL | Comment |
 |----|----|----|
-| JELOS | [github.com/JustEnoughLinuxOS/distribution](https://github.com/JustEnoughLinuxOS/distribution) | Project site, Stable Release Repository. |
-| Documentation | [jelos.org](https://jelos.org) | JELOS Wiki |
+| ROCKNIX | [github.com/ROCKNIX/distribution](https://github.com/ROCKNIX/distribution) | Project site, Stable Release Repository. |
+| Documentation | [rocknix.org](https://rocknix.org) | ROCKNIX Wiki |

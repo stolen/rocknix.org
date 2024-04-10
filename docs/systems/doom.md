@@ -12,7 +12,7 @@
 | --- | --- |
 | GZDoom | [github.com/ZDoom/gzdoom](https://github.com/ZDoom/gzdoom) |
 
-GZDoom will detect the analog stick automatically, this makes menus navigatable. JELOS does not provide any controls mapping for gzdoom, as there is no obvious default mapping as with console emulators. Users have to map their own preferred controls.
+GZDoom will detect the analog stick automatically, this makes menus navigatable. ROCKNIX does not provide any controls mapping for gzdoom, as there is no obvious default mapping as with console emulators. Users have to map their own preferred controls.
 
 ## Creating `.doom` files
 

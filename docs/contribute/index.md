@@ -2,9 +2,9 @@
 icon: material/developer-board
 --->
 
-# Contributing to JELOS
+# Contributing to ROCKNIX
 
-Your contribution helps JELOS become a better Linux distribution, so we're glad you're here! We aim to make contributing to this project as easy and transparent as possible.  
+Your contribution helps ROCKNIX become a better Linux distribution, so we're glad you're here! We aim to make contributing to this project as easy and transparent as possible.  
 
 Contributors are able to:
 
@@ -15,7 +15,7 @@ Contributors are able to:
 
 ## Becoming a maintainer
 
-When contributing to JELOS you are expected to become the maintainer of your contribution.  Please keep this in mind when submitting pull requests.
+When contributing to ROCKNIX you are expected to become the maintainer of your contribution.  Please keep this in mind when submitting pull requests.
 
 - Keep track of your contributions upstream and keep your components up-to-date.
 - Watch the issue tracker and resolve issues related to your contribution.
@@ -45,7 +45,7 @@ When you submit code changes, your submissions are understood to be contributed 
 
 ## Getting Started
 
-Our recommended next step is getting a build environment set up so you can see how JELOS works and how packages are built.  Check out the details in [Building JELOS](build.md) and if you have any questions please let us know on Discord.
+Our recommended next step is getting a build environment set up so you can see how ROCKNIX works and how packages are built.  Check out the details in [Building ROCKNIX](build.md) and if you have any questions please let us know on Discord.
 
 
 !!! note "This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)"

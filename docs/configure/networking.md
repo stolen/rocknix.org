@@ -2,7 +2,7 @@
 
 Networking can be set up on any device that can connect to the internet (this includes devices with native networking capabilites and ones where networking can be added through an external dongle).  
 
-With networking turned on you do things such as [add games](../../play/add-games), [update JELOS](../../play/update), [netplay across devices](../../play/netplay), [cloud sync](../cloud-sync), [play over VPN](../vpn) and access [RetroAchievements](../../play/retro-achievements/).
+With networking turned on you do things such as [add games](../../play/add-games), [update ROCKNIX](../../play/update), [netplay across devices](../../play/netplay), [cloud sync](../cloud-sync), [play over VPN](../vpn) and access [RetroAchievements](../../play/retro-achievements/).
 
 ## Setup
 

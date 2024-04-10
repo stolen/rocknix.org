@@ -1,6 +1,6 @@
 # :material-page-next-outline: Themes
 
-Our default frontend is EmulationStation and our default theme is [Art Book Next](https://github.com/anthonycaccese/art-book-next-jelos) (which has been designed specifically to work with all the aspect ratios we support).  You will see it represented in the UI as `system-theme` and it's updated automatically as part of each JELOS release.  It also offers a set of options to tailor the look of theme which are detailed below.
+Our default frontend is EmulationStation and our default theme is [Art Book Next](https://github.com/anthonycaccese/art-book-next-jelos) (which has been designed specifically to work with all the aspect ratios we support).  You will see it represented in the UI as `system-theme` and it's updated automatically as part of each ROCKNIX release.  It also offers a set of options to tailor the look of theme which are detailed below.
 
 ## Preview
 
@@ -21,8 +21,8 @@ The following options can be changed directly from the main menu under `UI Setti
 
 | Option | Description |
 | -- | -- |
-| Distribution | Used to define which folder to look in for Theme Customization files.  For JELOS installs this defaults to `JELOS` so please leave it as such |
-| Aspect Ratio | Enables you to select the correct aspect ratio for your screen.  JELOS supports 16:9, 4:3, 16:10, 5:3, 3:2 and 1:1 aspect ratios.  We default this automatically so you should not need to change it but if the theme layout looks odd or spacing looks incorrect you can use this setting to make sure the aspect ratio matches your screen. |
+| Distribution | Used to define which folder to look in for Theme Customization files.  For ROCKNIX installs this defaults to `ROCKNIX` so please leave it as such |
+| Aspect Ratio | Enables you to select the correct aspect ratio for your screen.  ROCKNIX supports 16:9, 4:3, 16:10, 5:3, 3:2 and 1:1 aspect ratios.  We default this automatically so you should not need to change it but if the theme layout looks odd or spacing looks incorrect you can use this setting to make sure the aspect ratio matches your screen. |
 | Color Scheme | Sets the color scheme that is used for the theme.  There is a set of prebuilt color schemes that you can select and an option to supply your custom color scheme (selected by choosing `custom`).  You can see details on customizations below under [Theme Customziations](#theme-customizations). |
 | Font Size | When this is set to custom it allows you to define custom font sizes for the gamelist.  You can see details on customizations below under [Theme Customziations](#theme-customizations). |
 | System View Style | Defines the layout/design used for the System View |
@@ -50,11 +50,11 @@ The following options can be changed directly from the main menu under `UI Setti
 
 ## Theme Customizations
 
-Art Book Next allows customizations to artwork, colors and fonts without the need to edit the source XML.  This enables you to change the look of the theme and retain any changes when JELOS is updated.
+Art Book Next allows customizations to artwork, colors and fonts without the need to edit the source XML.  This enables you to change the look of the theme and retain any changes when ROCKNIX is updated.
 
 ### Start Here 
-- Create the following path on your storage device: `~/roms/jelos/theme-customizations/art-book-next/`
-- In Theme Configuration make sure distribution is set to `JELOS` (this is needed to make sure the above path is referenced when looking for customization files)
+- Create the following path on your storage device: `~/roms/rocknix/theme-customizations/art-book-next/`
+- In Theme Configuration make sure distribution is set to `ROCKNIX` (this is needed to make sure the above path is referenced when looking for customization files)
 
 ### Background Art
 
@@ -135,4 +135,4 @@ Members of our Community create themes as well.  This list is not exhaustive but
 
 ## Creating Your Own Theme
 
-An exhaustive tutorial is out of scope for this wiki.  That said; please see Batocera's theme documention @ [https://wiki.batocera.org/write_themes_for_emulationstation](https://wiki.batocera.org/write_themes_for_emulationstation).  Its a great starter guide for understanding the fundamentals of creating themes for the version of EmulationStation used by JELOS.
+An exhaustive tutorial is out of scope for this wiki.  That said; please see Batocera's theme documention @ [https://wiki.batocera.org/write_themes_for_emulationstation](https://wiki.batocera.org/write_themes_for_emulationstation).  Its a great starter guide for understanding the fundamentals of creating themes for the version of EmulationStation used by ROCKNIX.

@@ -3,12 +3,12 @@
   <video autoplay loop muted><source src="_inc/video/preview.mp4" type="video/mp4"></video>
 </div>
 
-# Welcome to the JELOS Wiki :material-gamepad:
+# Welcome to the ROCKNIX Wiki :material-gamepad:
 
-[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=5998FF&label=Latest&style=flat#only-light)](https://github.com/JustEnoughLinuxOS/distribution/releases/latest) [![Activity](https://img.shields.io/github/commit-activity/m/JustEnoughLinuxOS/distribution?labelColor=111111&color=5998FF&label=Commits&style=flat#only-light)](https://github.com/JustEnoughLinuxOS/distribution/commits) [![Pull Requests](https://img.shields.io/github/issues-pr-closed/JustEnoughLinuxOS/distribution?labelColor=111111&color=5998FF&label=Pull&nbsp;Requests&style=flat#only-light)](https://github.com/JustEnoughLinuxOS/distribution/pulls) [![Community](https://img.shields.io/discord/948029830325235753?labelColor=111111&color=5998FF&label=Community&style=flat#only-light)](https://discord.gg/seTxckZjJy)
-[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=5998FF&label=Latest&style=flat#only-dark)](https://github.com/JustEnoughLinuxOS/distribution/releases/latest) [![Activity](https://img.shields.io/github/commit-activity/m/JustEnoughLinuxOS/distribution?labelColor=dddddd&color=5998FF&label=Commits&style=flat#only-dark)](https://github.com/JustEnoughLinuxOS/distribution/commits) [![Pull Requests](https://img.shields.io/github/issues-pr-closed/JustEnoughLinuxOS/distribution?labelColor=dddddd&color=5998FF&label=Pull&nbsp;Requests&style=flat#only-dark)](https://github.com/JustEnoughLinuxOS/distribution/pulls) [![Community](https://img.shields.io/discord/948029830325235753?labelColor=dddddd&color=5998FF&label=Community&style=flat#only-dark)](https://discord.gg/seTxckZjJy)
+[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=5998FF&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest) [![Activity](https://img.shields.io/github/commit-activity/m/JustEnoughLinuxOS/distribution?labelColor=111111&color=5998FF&label=Commits&style=flat#only-light)](https://github.com/ROCKNIX/distribution/commits) [![Pull Requests](https://img.shields.io/github/issues-pr-closed/JustEnoughLinuxOS/distribution?labelColor=111111&color=5998FF&label=Pull&nbsp;Requests&style=flat#only-light)](https://github.com/ROCKNIX/distribution/pulls) [![Community](https://img.shields.io/discord/948029830325235753?labelColor=111111&color=5998FF&label=Community&style=flat#only-light)](https://discord.gg/seTxckZjJy)
+[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=5998FF&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest) [![Activity](https://img.shields.io/github/commit-activity/m/JustEnoughLinuxOS/distribution?labelColor=dddddd&color=5998FF&label=Commits&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/commits) [![Pull Requests](https://img.shields.io/github/issues-pr-closed/JustEnoughLinuxOS/distribution?labelColor=dddddd&color=5998FF&label=Pull&nbsp;Requests&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/pulls) [![Community](https://img.shields.io/discord/948029830325235753?labelColor=dddddd&color=5998FF&label=Community&style=flat#only-dark)](https://discord.gg/seTxckZjJy)
 
-Just Enough Linux Operating System (JELOS) is an immutable Linux distribution for handheld gaming devices focused on retro gaming emulation.  It is developed by a small community of enthusiasts and our goal is to produce an operating system that has the features and capabilities we need and to have fun as we develop it.
+Just Enough Linux Operating System (ROCKNIX) is an immutable Linux distribution for handheld gaming devices focused on retro gaming emulation.  It is developed by a small community of enthusiasts and our goal is to produce an operating system that has the features and capabilities we need and to have fun as we develop it.
 
 ## Features
 
@@ -37,15 +37,15 @@ Just Enough Linux Operating System (JELOS) is an immutable Linux distribution fo
 
 ## Community
 
-The JELOS community utilizes Discord for discussion, if you would like to join us please use this link: &nbsp;[:simple-discord: Discord](https://discord.gg/seTxckZjJy)
+The ROCKNIX community utilizes Discord for discussion, if you would like to join us please use this link: &nbsp;[:simple-discord: Discord](https://discord.gg/seTxckZjJy)
 
 ## Licenses
 
-JELOS is a Linux distribution that is made up of many open-source components.  Components are provided under their respective licenses.  This distribution includes components licensed for non-commercial use only.
+ROCKNIX is a Linux distribution that is made up of many open-source components.  Components are provided under their respective licenses.  This distribution includes components licensed for non-commercial use only.
 
-### JELOS Branding
+### ROCKNIX Branding
 
-JELOS branding and images are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+ROCKNIX branding and images are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 You are free to:
 
@@ -58,14 +58,14 @@ Under the following terms:
 - NonCommercial: You may not use the material for commercial purposes.
 - ShareAlike: If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 
-### JELOS Software
+### ROCKNIX Software
 
-Copyright 2023 JELOS (https://github.com/JustEnoughLinuxOS)
+Copyright 2023 ROCKNIX (https://github.com/ROCKNIX)
 
-Original software and scripts developed by the JELOS team are licensed under the terms of the [GNU GPL Version 2](https://choosealicense.com/licenses/gpl-2.0/).  The full license can be found in this project's licenses folder.
+Original software and scripts developed by the ROCKNIX team are licensed under the terms of the [GNU GPL Version 2](https://choosealicense.com/licenses/gpl-2.0/).  The full license can be found in this project's licenses folder.
 
 ### Bundled Works
-All other software is provided under each component's respective license.  These licenses can be found in the software sources or in this project's licenses folder.  Modifications to bundled software and scripts by the JELOS team are licensed under the terms of the software being modified.
+All other software is provided under each component's respective license.  These licenses can be found in the software sources or in this project's licenses folder.  Modifications to bundled software and scripts by the ROCKNIX team are licensed under the terms of the software being modified.
 
 ## Credits
 

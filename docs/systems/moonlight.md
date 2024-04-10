@@ -1,11 +1,11 @@
 # Moonlight
 
-JELOS now supports Moonlight Game Streaming, which allows to connect to your local computer running [Moonlight](https://moonlight-stream.org/) and stream AAA games.
+ROCKNIX now supports Moonlight Game Streaming, which allows to connect to your local computer running [Moonlight](https://moonlight-stream.org/) and stream AAA games.
 
 ## Step 1: Setup Moonlight on your PC
 Please follow standard guide to setup Moonlight on your home PC, [link](https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide).
 
-## Step 2: Configure Moonlight in JELOS
+## Step 2: Configure Moonlight in ROCKNIX
 The setup requires pairing with your local PC running Moonlight and then populating Moonlight Streaming tab with all your games. After those are completed, you can select an individual game to start streaming.
 
 ### Pair with your local PC

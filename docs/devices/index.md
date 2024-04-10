@@ -1,6 +1,6 @@
 # Device Support
 
-JELOS supports a variety of ARM and Intel/AMD based devices.
+ROCKNIX supports a variety of ARM and Intel/AMD based devices.
 
 | Manufacturer | Device | CPU / Architecture | Kernel | GL driver | Interface |
 | -- | -- | -- | -- | -- | -- |
@@ -34,4 +34,4 @@ JELOS supports a variety of ARM and Intel/AMD based devices.
 | Powkiddy | [RK2023](powkiddy/rk2023.md) | Rockchip RK3566 (ARM) | Rockchip BSP 4.19 | Mali | KMS/DRM + Emulation Station |
 | Powkiddy | [x55](powkiddy/x55.md) | Rockchip RK3566 (ARM) | Rockchip BSP 4.19 | Mali | KMS/DRM + Emulation Station |
 
-!!! info "While not technically supported, JELOS is also known to work well on a variety of generic x86_64 devices including gaming PCs, mini PCs, and laptop computers."
+!!! info "While not technically supported, ROCKNIX is also known to work well on a variety of generic x86_64 devices including gaming PCs, mini PCs, and laptop computers."

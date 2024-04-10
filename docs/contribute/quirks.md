@@ -57,7 +57,7 @@ The simplest way to create a quirk for your device is to copy an existing quirk 
 Next, edit each file to contain the data appropriate for your device.  To collect the data that you need, use the following tools:
 
 - 001-deviceconfig
-    - This configuration file contains basic information for JELOS that cannot currently be determined automatically.  A configuration is provided with the distribution if there is no quirk found, however it can be customized to suit.  The following tools can be used to identify the correct data for your device.
+    - This configuration file contains basic information for ROCKNIX that cannot currently be determined automatically.  A configuration is provided with the distribution if there is no quirk found, however it can be customized to suit.  The following tools can be used to identify the correct data for your device.
     - KEYA/B_MODIFIER - `evtest`.
     - PATH_SPK/HP - `amixer`.
 - 002-fancontrol
@@ -67,7 +67,7 @@ Next, edit each file to contain the data appropriate for your device.  To collec
 
 ### Additional Quirks
 
-Your device may need additional quirks to function correctly or for optimization. Ask in the JELOS discord if you need additional guidance.
+Your device may need additional quirks to function correctly or for optimization. Ask in the ROCKNIX discord if you need additional guidance.
 
 ## Submit Your Quirk
 

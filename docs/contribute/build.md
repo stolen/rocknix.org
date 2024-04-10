@@ -1,10 +1,10 @@
-# :octicons-stack-16: Building JELOS
+# :octicons-stack-16: Building ROCKNIX
 
-JELOS is a fairly unique distribution as it is *built to order* and only enough of the operating system and applications are built for the purpose of booting and executing emulators and ports.  Developers and others who would like to contribute to our project should read and agree to the [Contributor Code of Conduct](code-of-conduct.md) and [Contributing to JELOS](index.md) guides before submitting your first contribution.
+ROCKNIX is a fairly unique distribution as it is *built to order* and only enough of the operating system and applications are built for the purpose of booting and executing emulators and ports.  Developers and others who would like to contribute to our project should read and agree to the [Contributor Code of Conduct](code-of-conduct.md) and [Contributing to ROCKNIX](index.md) guides before submitting your first contribution.
 
 ## 1. Prep
 
-Building JELOS requires a host with 200GB of free space for a single device, or 1TB of free space for a full world build.  
+Building ROCKNIX requires a host with 200GB of free space for a single device, or 1TB of free space for a full world build.  
 
 !!! note "Expect your first build to take on the order of ten hours.  You will need a stable internet connection, since hundreds of packages will be downloaded from their source."  
 
@@ -14,7 +14,7 @@ After a clean build, all subsequent builds will go much faster (minutes) since 9
 
 ### Docker **(Recommended)**
 
-!!! tip "Docker is the easiest and most reliable way to build JELOS." 
+!!! tip "Docker is the easiest and most reliable way to build ROCKNIX." 
 
 You need no previous experience with Docker; you merely need to install it on your build machine.  Newcomers to the project are strongly recommended to use this approach.
 
@@ -49,7 +49,7 @@ The final command should produce a message indicating that Docker is properly in
 
 ### Manual Build
 
-Manual builds (outside of Docker) are only recommended for developers with specific needs that cannot be met by the Docker approach.  The host configuration should match the Docker container as closely as possible, running Ubuntu 22.04 with all packages listed in the [Dockerfile](https://github.com/JustEnoughLinuxOS/distribution/blob/main/Dockerfile).
+Manual builds (outside of Docker) are only recommended for developers with specific needs that cannot be met by the Docker approach.  The host configuration should match the Docker container as closely as possible, running Ubuntu 22.04 with all packages listed in the [Dockerfile](https://github.com/ROCKNIX/distribution/blob/main/Dockerfile).
 
 ### Virtual Machines
 
@@ -57,11 +57,11 @@ If you prefer to use a virtual machine for your build platform; keep in mind tha
 
 ## 2. Clone
 
-After preparing the build machine, clone the JELOS git repository onto it.
+After preparing the build machine, clone the ROCKNIX git repository onto it.
 
 ``` bash
 cd ~
-git clone https://github.com/JustEnoughLinuxOS/distribution.git
+git clone https://github.com/ROCKNIX/distribution.git
 ```
 
 ### Selecting the Desired Branch
@@ -70,8 +70,8 @@ Once you have cloned the repo, decide whether you want to build the main branch 
 
 |Branch|Purpose|
 |----|----|
-|main|Stable JELOS sources|
-|dev|Unstable JELOS sources|
+|main|Stable ROCKNIX sources|
+|dev|Unstable ROCKNIX sources|
 
 To check out our development branch, cd into the project directory and checkout `dev`.
 
@@ -85,7 +85,7 @@ We have a simple filesystem structure adopted from parent distributions CoreELEC
 
 ``` bash
 .
-├── build.JELOS-DEVICE.ARCHITECTURE
+├── build.ROCKNIX-DEVICE.ARCHITECTURE
 ├── config
 ├── distributions
 ├── Dockerfile
@@ -100,9 +100,9 @@ We have a simple filesystem structure adopted from parent distributions CoreELEC
 └── tools
 ```
 
-**build.JELOS-DEVICE.ARCHITECTURE**
+**build.ROCKNIX-DEVICE.ARCHITECTURE**
 
-Build roots for each device and that device's architecture(s).  For ARM devices JELOS builds and uses a 32bit root for several of the cores used in the 64bit distribution.
+Build roots for each device and that device's architecture(s).  For ARM devices ROCKNIX builds and uses a 32bit root for several of the cores used in the 64bit distribution.
 
 **config**
 
@@ -114,7 +114,7 @@ Distributions contains distribution-specific build flags and parameters and spla
 
 **Dockerfile**
 
-Used to build the Ubuntu container used to build JELOS.  The container is hosted at [https://hub.docker.com/u/justenoughlinuxos](https://hub.docker.com/u/justenoughlinuxos).
+Used to build the Ubuntu container used to build ROCKNIX.  The container is hosted at [https://hub.docker.com/u/justenoughlinuxos](https://hub.docker.com/u/justenoughlinuxos).
 
 **licenses**
 
@@ -122,11 +122,11 @@ All of the licenses used throughout the distribution packages are hosted here.  
 
 **Makefile**
 
-Used to build one or more JELOS images, or to build and deploy the Ubuntu container.
+Used to build one or more ROCKNIX images, or to build and deploy the Ubuntu container.
 
 **packages**
 
-All of the packages used to develop and build JELOS are hosted within the packages directory.  The package structure documentation is available [here](packages.md).
+All of the packages used to develop and build ROCKNIX are hosted within the packages directory.  The package structure documentation is available [here](packages.md).
 
 **post-update**
 
@@ -156,7 +156,7 @@ The tools directory contains utility scripts that can be used during the develop
 
 ### Building Device Images
 
-Building JELOS is easy.  From the root of your local repository, issue one of the `make` commands listed below, depending on the desired device and whether you are using Docker.
+Building ROCKNIX is easy.  From the root of your local repository, issue one of the `make` commands listed below, depending on the desired device and whether you are using Docker.
 
 | Devices | Dependency | Docker Command | Manual Command |
 | ---- | ---- | ---- | ---- |
@@ -178,20 +178,20 @@ make docker-AMD64
 
 ### Rightsized Builds
 
-JELOS supports various build variables which alter the behavior of the distribution for specific purposes including debugging, or hosting containers.  The options are defined below and are passed on the make command line.  Ex. `BASE_ONLY=true make docker-RK3566`.
+ROCKNIX supports various build variables which alter the behavior of the distribution for specific purposes including debugging, or hosting containers.  The options are defined below and are passed on the make command line.  Ex. `BASE_ONLY=true make docker-RK3566`.
 
 |Build Option|Default|Function|
 |----|----|----|
 |EMULATION_DEVICE|yes|Builds EmulationStation and all emulators if `yes`. Builds EmulationStation and NO emulators if `no`.|
 |ENABLE_32BIT|yes|Builds a 32bit root and includes it in the image.  Needed for 32bit cores and applications.|
 |BASE_ONLY|false<sup>1</sup>|Builds only the bare minimum packages.  Includes Weston on supported devices.  Does not build EmulationStation.|
-|CONTAINER_SUPPORT|no|Builds support for running containers on JELOS.|
+|CONTAINER_SUPPORT|no|Builds support for running containers on ROCKNIX.|
 
 > Note: <sup>1</sup> this property will change to yes/no for consistency in a future release.
 
 ### Env Variables
 
-For development builds, you can use the following env variables to customize the image or change build time functionality. To make them globally available to the builds, add them to `${HOME}/.JELOS/options`.
+For development builds, you can use the following env variables to customize the image or change build time functionality. To make them globally available to the builds, add them to `${HOME}/.ROCKNIX/options`.
 
 |Variable|Function|
 |----|----|
@@ -207,7 +207,7 @@ For development builds, you can use the following env variables to customize the
 #### SSH Keys
 
 ``` bash
-export LOCAL_SSH_KEYS_FILE=~/.ssh/jelos/authorized_keys
+export LOCAL_SSH_KEYS_FILE=~/.ssh/rocknix/authorized_keys
 ```
 
 #### WiFi SSID and password
@@ -219,7 +219,7 @@ export LOCAL_WIFI_KEY=secret
 
 #### Screenscraper, GamesDB, and RetroAchievements
 
-To enable Screenscraper, GamesDB, and RetroAchievements, register at each site and apply the api keys in `${HOME}/.JELOS/options`. Unsetting one of the variables will disable it in EmulationStation. This configuration is picked up by EmulationStation during the build.
+To enable Screenscraper, GamesDB, and RetroAchievements, register at each site and apply the api keys in `${HOME}/.ROCKNIX/options`. Unsetting one of the variables will disable it in EmulationStation. This configuration is picked up by EmulationStation during the build.
 
 ``` bash
 # Apply for a Screenscraper API Key here: https://www.screenscraper.fr/forumsujets.php?frub=12&numpage=0
@@ -241,7 +241,7 @@ The first and last lines should be omitted if building outside of Docker.
 
 ## Troubleshooting
 
-The very first build after a fresh checkout is the hardest. Give yourself sufficient time to generate the first build and work through any failures before attempting to modify JELOS. 
+The very first build after a fresh checkout is the hardest. Give yourself sufficient time to generate the first build and work through any failures before attempting to modify ROCKNIX. 
 
 Download errors can produce misleading failure messages so beware of chasing red herrings.  A network failure is much more likely than a bug in the makefile, given how frequently it is tested by our CI system and other devs.
 
@@ -281,7 +281,7 @@ If that completes without error then running the build for your device should pr
 
 If you are still getting an error after trying the above its likely that a download failure occured for the source of the package that is failing. 
 
-In this case; manually delete the relevant package(s) from the `sources` and `build.JELOS-...` directories and start your build again.  This will force that package to be re-downloaded from source and re-built.
+In this case; manually delete the relevant package(s) from the `sources` and `build.ROCKNIX-...` directories and start your build again.  This will force that package to be re-downloaded from source and re-built.
 
 ### Additional notes
 - In most cases build failures are caused by single package failures which the above options should help resolve. Exhaust all options before using `make clean` for the entire build. That action will delete the build cache and takes hours to regenerate.  

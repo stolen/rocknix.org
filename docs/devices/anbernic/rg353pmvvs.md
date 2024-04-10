@@ -18,7 +18,7 @@
 
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
-| :material-harddisk: Storage | JELOS can be installed to the emmc on P/M/V models or run from an SD Card, and an second SD card can be used to store games |
+| :material-harddisk: Storage | ROCKNIX can be installed to the emmc on P/M/V models or run from an SD Card, and an second SD card can be used to store games |
 | :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 | :material-lightbulb-on: LED | Supports selecting from a set of colors or turning the power LED off (choice persists through reboots) <br> Does not support other effects. |
@@ -27,16 +27,16 @@
 
 ### Installation
 
-Download the latest `RK3566` version of JELOS from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
+Download the latest `RK3566` version of ROCKNIX from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
 
-[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=5998FF&label=Latest&style=flat#only-light)](https://github.com/JustEnoughLinuxOS/distribution/releases/latest)
-[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=5998FF&label=Latest&style=flat#only-dark)](https://github.com/JustEnoughLinuxOS/distribution/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=5998FF&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=5998FF&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
 
 ## Additional References
 
-- [Platform Documentation (RK3566)](https://github.com/JustEnoughLinuxOS/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3566)
-- [Device Quirks (353P/M)](https://github.com/JustEnoughLinuxOS/distribution/tree/main/packages/hardware/quirks/devices/Anbernic%20RG353P)
-- [Device Quirks (353V)](https://github.com/JustEnoughLinuxOS/distribution/tree/main/packages/hardware/quirks/devices/Anbernic%20RG353V)
+- [Platform Documentation (RK3566)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3566)
+- [Device Quirks (353P/M)](https://github.com/ROCKNIX/distribution/tree/main/packages/hardware/quirks/devices/Anbernic%20RG353P)
+- [Device Quirks (353V)](https://github.com/ROCKNIX/distribution/tree/main/packages/hardware/quirks/devices/Anbernic%20RG353V)
 
 ## Community Videos
 

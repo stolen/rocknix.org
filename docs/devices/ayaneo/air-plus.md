@@ -12,7 +12,7 @@
 
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
-| :material-harddisk: Storage | JELOS can be run from a USB Drive or installed directly to the internal NVME. When installed directly to the NVME; an SD Card can be used for game storage. <br> JELOS **can't** be run from an SD Card on the AYANEO Air Plus due to a limitation in the device's bios that we unfortunately can't change. |
+| :material-harddisk: Storage | ROCKNIX can be run from a USB Drive or installed directly to the internal NVME. When installed directly to the NVME; an SD Card can be used for game storage. <br> ROCKNIX **can't** be run from an SD Card on the AYANEO Air Plus due to a limitation in the device's bios that we unfortunately can't change. |
 | :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 | :material-fan: Fan | Controlled by system firmware. |
@@ -28,17 +28,17 @@
 
 ### Installation
 
-Download the latest `AMD64` version of JELOS from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
+Download the latest `AMD64` version of ROCKNIX from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
 
-[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=5998FF&label=Latest&style=flat#only-light)](https://github.com/JustEnoughLinuxOS/distribution/releases/latest)
-[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=5998FF&label=Latest&style=flat#only-dark)](https://github.com/JustEnoughLinuxOS/distribution/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=5998FF&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=5998FF&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
 
 ### Booting from an USB Drive
 
-To boot JELOS from the USB Drive, hold ++"LC"+"Volume Up"++ and press the ++"Power"++ button, continue holding ++"LC"+"Volume Up"++ until the Ayaneo logo appears.  Select the storage device with JELOS from the boot menu using the Ayaneo button, and then press volume up to boot the distribution.
+To boot ROCKNIX from the USB Drive, hold ++"LC"+"Volume Up"++ and press the ++"Power"++ button, continue holding ++"LC"+"Volume Up"++ until the Ayaneo logo appears.  Select the storage device with ROCKNIX from the boot menu using the Ayaneo button, and then press volume up to boot the distribution.
 
 ## Additional References
 
-- [Platform Documentation (AMD64)](https://github.com/JustEnoughLinuxOS/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/AMD64)
-- [Device Quirks](https://github.com/JustEnoughLinuxOS/distribution/tree/main/packages/hardware/quirks/devices/AYANEO%20AIR%20Plus)
-- [Panel Rotation](https://github.com/JustEnoughLinuxOS/distribution/blob/main/packages/kernel/linux/patches/AMD64/002-display-quirks.patch)
+- [Platform Documentation (AMD64)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/AMD64)
+- [Device Quirks](https://github.com/ROCKNIX/distribution/tree/main/packages/hardware/quirks/devices/AYANEO%20AIR%20Plus)
+- [Panel Rotation](https://github.com/ROCKNIX/distribution/blob/main/packages/kernel/linux/patches/AMD64/002-display-quirks.patch)

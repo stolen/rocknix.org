@@ -14,6 +14,6 @@ PortMaster provides a easy way to set up and play ports of many homebrew and cla
 
 !!! note "PortMaster is only known to work on ARM devices at this time."
 
-Follow PortMaster's install instructions for JELOS listed on their wiki [here](https://portmaster.games/installation.html). You can use either the script or zip method described on that page.  
+Follow PortMaster's install instructions for ROCKNIX listed on their wiki [here](https://portmaster.games/installation.html). You can use either the script or zip method described on that page.  
 
 For any questions regarding PortMaster please check out their [Discord](https://discord.gg/JxYBp9HTAY)

@@ -1,22 +1,22 @@
-# JELOS Wiki
+# ROCKNIX Wiki
 
-This is the repository for the JELOS Wiki ([created using MkDocs](https://www.mkdocs.org/))
+This is the repository for the ROCKNIX Wiki ([created using MkDocs](https://www.mkdocs.org/))
 
 It uses the mkdocs-material theme for its layout & styling: [https://github.com/squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 
-The JELOS Wiki is located at: [jelos.org](https://jelos.org/)
+The ROCKNIX Wiki is located at: [rocknix.org](https://rocknix.org/)
 
-This is not the **repository** for the JELOS distribution, you can find that here: [https://github.com/JustEnoughLinuxOS/distribution](https://github.com/JustEnoughLinuxOS/distribution).
+This is not the **repository** for the ROCKNIX distribution, you can find that here: [https://github.com/ROCKNIX/distribution](https://github.com/ROCKNIX/distribution).
 
 ## How to Contribute
 
-You can contribute to the JELOS Wiki in a couple of ways.
+You can contribute to the ROCKNIX Wiki in a couple of ways.
 
 ### Option 1: A quick shout-out on Discord
 
-Write us a message on the JELOS Discord stating what should be edited or added.
+Write us a message on the ROCKNIX Discord stating what should be edited or added.
 
-[JELOS Discord](https://discord.gg/seTxckZjJy)
+[ROCKNIX Discord](https://discord.gg/seTxckZjJy)
 
 ### Option 2: Creating a Pull Request
 

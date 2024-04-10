@@ -1,7 +1,7 @@
-site_name: JELOS Wiki
-site_url: https://jelos.org
-repo_url: https://github.com/JustEnoughLinuxOS/jelos.org
-repo_name: jelos.org
+site_name: ROCKNIX Wiki
+site_url: https://rocknix.org
+repo_url: https://github.com/ROCKNIX/rocknix.org
+repo_name: rocknix.org
 copyright: Copyright Creative Commons Attribution-ShareAlike 4.0 International
 theme:
   language: en
@@ -58,7 +58,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github 
-      link: https://github.com/JustEnoughLinuxOS/distribution
+      link: https://github.com/ROCKNIX/distribution
     - icon: fontawesome/brands/discord 
       link: https://discord.gg/seTxckZjJy
 plugins:
