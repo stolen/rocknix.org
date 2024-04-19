@@ -154,6 +154,15 @@ The tools directory contains utility scripts that can be used during the develop
 
 ## 3. Build
 
+### Making the Builder image
+
+To be able to build with Docker, you'll need to create the builder image. This only needs to be done one time before you build your first image.
+
+``` bash
+make docker-image-build
+```
+!!! note "For users with docker <= 22, the BuildKit plugin must also be installed. You can alternatively build using the legacy builder with `docker build --tag "rocknix/rocknix-build:latest" .`"  
+
 ### Building Device Images
 
 Building ROCKNIX is easy.  From the root of your local repository, issue one of the `make` commands listed below, depending on the desired device and whether you are using Docker.
