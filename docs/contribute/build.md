@@ -161,7 +161,7 @@ To be able to build with Docker, you'll need to create the builder image. This o
 ``` bash
 make docker-image-build
 ```
-!!! note "For users with docker <= 22, the BuildKit plugin must also be installed. You can alternatively build with the legacy builder with `docker build --tag "rocknix/rocknix-build:latest" .`"  
+!!! note "For users with docker <= 22, the BuildKit plugin must also be installed. You can alternatively build using the legacy builder with `docker build --tag "rocknix/rocknix-build:latest" .`"  
 
 ### Building Device Images
 
