@@ -156,7 +156,7 @@ The tools directory contains utility scripts that can be used during the develop
 
 ### Making the Builder image
 
-To be able to build with Docker, you'll need to create the builder image.
+To be able to build with Docker, you'll need to create the builder image. This only needs to be done one time before you build your first image.
 
 ``` bash
 make docker-image-build
