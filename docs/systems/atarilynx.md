@@ -4,7 +4,7 @@
 
 | Game Path | Supported Extensions |
 | --- | --- |
-| `roms/atarilynx` | ++".lnx"++ ++".lyx"++ ++".zip"++ ++".7z"++ |
+| `roms/atarilynx` | ++".lnx"++ ++".lyx"++ ++".o"++ ++".zip"++ ++".7z"++ |
 
 ## Emulator/Core
 
