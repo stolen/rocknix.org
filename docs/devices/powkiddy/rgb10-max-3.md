@@ -6,7 +6,7 @@
 
 | Device | CPU / Architecture | Kernel | GL driver | Interface |
 | -- | -- | -- | -- | -- |
-| RGB10 Max 3 | Rockchip RK3566 (ARM) | Rockchip BSP 4.19 | Mali | KMS/DRM + Emulation Station |
+| RGB10 Max 3 | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
 
 ## Features
 

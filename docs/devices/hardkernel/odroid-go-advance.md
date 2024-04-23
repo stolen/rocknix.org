@@ -6,7 +6,7 @@
 
 | Device | CPU / Architecture | Kernel | GL driver | Interface |
 | -- | -- | -- | -- | -- |
-|  Odroid Go Advance | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Weston + Emulation Station |
+|  Odroid Go Advance | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
 
 ## Notes
 

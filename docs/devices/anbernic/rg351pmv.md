@@ -6,8 +6,8 @@
 
 | Device | CPU / Architecture | Kernel | GL driver | Interface |
 | -- | -- | -- | -- | -- |
-| RG351P/M | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Weston + Emulation Station |
-| RG351V | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Weston + Emulation Station |
+| RG351P/M | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+| RG351V | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
 
 ## Features
 

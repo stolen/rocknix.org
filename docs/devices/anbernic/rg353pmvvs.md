@@ -6,10 +6,10 @@
 
 | Device | CPU / Architecture | Kernel | GL driver | Interface |
 | -- | -- | -- | -- | -- |
-| RG353P | Rockchip RK3566 (ARM) | Rockchip BSP 4.19 | Mali | KMS/DRM + Emulation Station |
-| RG353M | Rockchip RK3566 (ARM) | Rockchip BSP 4.19 | Mali | KMS/DRM + Emulation Station |
-| RG353V | Rockchip RK3566 (ARM) | Rockchip BSP 4.19 | Mali | KMS/DRM + Emulation Station |
-| RG353VS | Rockchip RK3566 (ARM) | Rockchip BSP 4.19 | Mali | KMS/DRM + Emulation Station |
+| RG353P | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+| RG353M | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+| RG353V | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+| RG353VS | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
 
 !!! info "Anbernic RG353P/M/V/VS devices with both v1 and v2 displays are supported."
 !!! warning "RG353PS, ARC-S, and ARC-D models will not be supported."

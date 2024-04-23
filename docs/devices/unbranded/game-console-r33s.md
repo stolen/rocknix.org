@@ -6,7 +6,7 @@
 
 | Device | CPU / Architecture | Kernel | GL driver | Interface |
 | -- | -- | -- | -- | -- |
-| R33S | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Weston + Emulation Station |
+| R33S | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
 
 ## Controls
 

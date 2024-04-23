@@ -6,7 +6,7 @@
 
 | Device | CPU / Architecture | Kernel | GL driver | Interface |
 | -- | -- | -- | -- | -- |
-| RGB10 | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Weston + Emulation Station |
+| RGB10 | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
 
 ## Emulators
 

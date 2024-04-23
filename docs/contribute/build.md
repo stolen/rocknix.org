@@ -223,7 +223,7 @@ ROCKNIX supports various build variables which alter the behavior of the distrib
 |----|----|----|
 |EMULATION_DEVICE|yes|Builds EmulationStation and all emulators if `yes`. Builds EmulationStation and NO emulators if `no`.|
 |ENABLE_32BIT|yes|Builds a 32bit root and includes it in the image.  Needed for 32bit cores and applications.|
-|BASE_ONLY|false<sup>1</sup>|Builds only the bare minimum packages.  Includes Weston on supported devices.  Does not build EmulationStation.|
+|BASE_ONLY|false<sup>1</sup>|Builds only the bare minimum packages.  Includes Sway or Weston on supported devices.  Does not build EmulationStation.|
 |CONTAINER_SUPPORT|no|Builds support for running containers on ROCKNIX.|
 
 > Note: <sup>1</sup> this property will change to yes/no for consistency in a future release.
