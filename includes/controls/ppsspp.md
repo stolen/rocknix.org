@@ -4,10 +4,10 @@
 | -- | -- |
 | ++"START"++ | Start |
 | ++"SELECT"++ | Select |
-| ++"A(SOUTH)"++ | Circle |
-| ++"B(EAST)"++ | Cross |
-| ++"X(NORTH)"++ | Triangle |
-| ++"Y(WEST)"++ | Square |
+| ++"{{ btn_east }}"++ | Circle |
+| ++"{{ btn_south }}"++ | Cross |
+| ++"{{ btn_north }}"++ | Triangle |
+| ++"{{ btn_west }}"++ | Square |
 | ++"L1"++ | L |
 | ++"R1"++ | R |
 | ++"{{ btn_save }}"++ | Save State |

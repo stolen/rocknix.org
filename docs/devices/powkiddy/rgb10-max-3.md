@@ -19,10 +19,10 @@
 
 ## Controls
 
-{%set btn_north = 'Y(NORTH)' %}
-{%set btn_west = 'X(WEST)' %}
-{%set btn_south = 'A(SOUTH)' %}
-{%set btn_east = 'B(EAST)' %}
+{%set btn_north = 'X(NORTH)' %}
+{%set btn_west = 'Y(WEST)' %}
+{%set btn_south = 'B(SOUTH)' %}
+{%set btn_east = 'A(EAST)' %}
 
 {%include 'controls/retroarch.md' %}
 {%include 'controls/mednafen.md' %}
@@ -30,7 +30,7 @@
 
 {%set btn_save = 'R2' %}
 {%set btn_load = 'L2' %}
-{%set btn_menu = 'R3' %}
+{%set btn_menu = 'L3' %}
 {%include 'controls/ppsspp.md' %}
 
 {%include 'controls/hypseus-singe.md' %}
