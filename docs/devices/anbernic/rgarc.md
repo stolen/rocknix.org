@@ -1,12 +1,15 @@
-# Anbernic RG Arc
+# Anbernic RG Arc [D/S]
 
 ![](../../_inc/images/devices/anbernic-rgarc.png){ .off-glb }
 
 ## Overview
+!!! warning "eMMC model with legacy bootloader is not supported."
 
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| -- | -- | -- | -- | -- |
-| RG Arc | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+{%set hw_display = '4 inch 640x480' %}
+{%set hw_emmc = '32GB (D)' %}
+{%set hw_connectivity = '5g WiFi + BT' %}
+{%set hw_ram = '1 GB (S), 2GB (D) DDR4' %}
+{% include "platforms/rk3566.md" %}
 
 ## Features
 

@@ -3,9 +3,10 @@
 ![](../../_inc/images/devices/powkiddy-rgb10max3.png){ .off-glb }
 
 ## Overview
-{%set emmc = 'None' %}
-{%set radio = '2.4g WiFi + BT (RTL8723DS)' %}
-{%set ram = '1 GB DDR4' %}
+{%set hw_display = '5 inch 1280x720' %}
+{%set hw_emmc = 'None' %}
+{%set hw_connectivity = '2.4g WiFi + BT (RTL8723DS)' %}
+{%set hw_ram = '1 GB DDR4' %}
 {% include "platforms/rk3566.md" %}
 
 ## Features

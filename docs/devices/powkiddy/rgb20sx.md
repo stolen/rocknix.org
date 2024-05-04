@@ -3,10 +3,11 @@
 ![](../../_inc/images/devices/powkiddy-rgb20sx.png){ .off-glb }
 
 ## Overview
-
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| -- | -- | -- | -- | -- |
-| RGB20SX | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+{%set hw_display = '4 inch 720x720' %}
+{%set hw_emmc = 'None' %}
+{%set hw_connectivity = '2.4g WiFi + BT (RTL8723DS)' %}
+{%set hw_ram = '1 GB DDR4' %}
+{% include "platforms/rk3566.md" %}
 
 ## Features
 

@@ -3,10 +3,11 @@
 ![](../../_inc/images/devices/hardkernel-odroid-go-super.png){ .off-glb }
 
 ## Overview
-
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| -- | -- | -- | -- | -- |
-| Odroid Go Super | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+{%set hw_display = '5 inch 854x480' %}
+{%set hw_emmc = 'None' %}
+{%set hw_connectivity = 'None' %}
+{%set hw_ram = '1 GB DDR3' %}
+{% include "platforms/rk3326.md" %}
 
 ## Notes
 
