@@ -47,6 +47,11 @@
 
 ### Installation
 
+Download the latest `RK3566` version of ROCKNIX from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
+
+[![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
+
 #### Video Guide
 > Courtesy of [@RetroGameCorps](https://www.youtube.com/@RetroGameCorps)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yXtZTMxn94Q?si=WTPxyu2W1RyCk6sF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
