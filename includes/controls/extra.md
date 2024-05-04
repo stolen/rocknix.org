@@ -9,8 +9,6 @@
 
 #### HDMI Output
 
-!!! note "These instruction only work for aarm64 devices.  This is not implemented for x86_64 devices."
-
 Press ++"L1"++ + ++"START"++ + ++"SELECT"++ while in EmulationStation to swtich between Screen and HDMI output. 
 
 While this should work; it doesn't always result in the correct resolution. The best way to get consistent results is to turn off the device, plug in an HDMI cable and reboot.  
