@@ -3,10 +3,11 @@
 ![](../../_inc/images/devices/powkiddy-rgb10.png){ .off-glb }
 
 ## Overview
-
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| -- | -- | -- | -- | -- |
-| RGB10 | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+{%set hw_display = '3.5 inch 480x320' %}
+{%set hw_emmc = 'None' %}
+{%set hw_connectivity = 'None' %}
+{%set hw_ram = '1 GB DDR3' %}
+{% include "platforms/rk3326.md" %}
 
 ## Emulators
 

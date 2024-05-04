@@ -3,11 +3,11 @@
 ![](../../_inc/images/devices/anbernic-rg351pm.png){ .off-glb }
 
 ## Overview
-
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| -- | -- | -- | -- | -- |
-| RG351P/M | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
-| RG351V | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+{%set hw_display = '3.5 inch 480x320 (P/M), 640x480 (V)' %}
+{%set hw_emmc = 'None' %}
+{%set hw_connectivity = '2.4g Wifi (M/V))' %}
+{%set hw_ram = '1 GB DDR3' %}
+{% include "platforms/rk3326.md" %}
 
 ## Features
 

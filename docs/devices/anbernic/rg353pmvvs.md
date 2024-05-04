@@ -1,18 +1,17 @@
-# Anbernic RG353 [P/M/V/VS]
+# Anbernic RG353 [P/M/V/VS/PS]
 
 ![](../../_inc/images/devices/anbernic-rg353.png){ .off-glb }
 
 ## Overview
-
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| -- | -- | -- | -- | -- |
-| RG353P | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
-| RG353M | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
-| RG353V | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
-| RG353VS | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
-
+!!! warning "eMMC models with legacy bootloader is not supported."
 !!! info "Anbernic RG353P/M/V/VS devices with both v1 and v2 displays are supported."
-!!! warning "RG353PS, ARC-S, and ARC-D models will not be supported."
+
+{%set hw_display = '3.5 inch 640x480' %}
+{%set hw_emmc = '32GB (P/M/V)' %}
+{%set hw_connectivity = '5g WiFi + BT' %}
+{%set hw_ram = '1 GB (VS/PS), 2GB (P/M/V) DDR4' %}
+{% include "platforms/rk3566.md" %}
+
 
 ## Features
 

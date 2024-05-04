@@ -3,11 +3,11 @@
 ![](../../_inc/images/devices/unbranded-game-console-r36s.png){ .off-glb }
 
 ## Overview
-
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| -- | -- | -- | -- | -- |
-| R35S | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
-| R36S | Rockchip RK3326 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+{%set hw_display = '640x480' %}
+{%set hw_emmc = 'None' %}
+{%set hw_connectivity = 'None' %}
+{%set hw_ram = '1 GB DDR3' %}
+{% include "platforms/rk3326.md" %}
 
 ## Controls
 

@@ -3,10 +3,11 @@
 ![](../../_inc/images/devices/powkiddy-rgb10max3.png){ .off-glb }
 
 ## Overview
-
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| -- | -- | -- | -- | -- |
-| RGB10 Max 3 | Rockchip RK3566 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+{%set hw_display = '5 inch 1280x720' %}
+{%set hw_emmc = 'None' %}
+{%set hw_connectivity = '2.4g WiFi + BT (RTL8723DS)' %}
+{%set hw_ram = '1 GB DDR4' %}
+{% include "platforms/rk3566.md" %}
 
 ## Features
 
