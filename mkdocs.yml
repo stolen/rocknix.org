@@ -210,6 +210,7 @@ nav:
         - RG353 [P/M/V/VS]: devices/anbernic/rg353pmvvs.md
         - RG503: devices/anbernic/rg503.md
         - RG552: devices/anbernic/rg552.md
+        - RG Arc: devices/anbernic/rgarc.md
       - GameForce:
         - GameForce Ace: devices/gameforce/gameforce-ace.md
       - Hardkernel:
@@ -225,6 +226,7 @@ nav:
         - RGB10 Max 3 Pro: devices/powkiddy/rgb10-max-3-pro.md
         - RGB10 Max 3: devices/powkiddy/rgb10-max-3.md
         - RGB30: devices/powkiddy/rgb30.md
+        - RGB20sx: devices/powkiddy/rgb20sx.md
         - RK2023: devices/powkiddy/rk2023.md
         - x55: devices/powkiddy/x55.md
         - RGB10: devices/powkiddy/rgb10.md
