@@ -6,10 +6,10 @@
 !!! warning "eMMC models with legacy bootloader is not supported."
 !!! info "Anbernic RG353P/M/V/VS devices with both v1 and v2 displays are supported."
 
-{%set hw_display = '3.5 inch 640x480' %}
+{%set hw_display = '3.5-inch 640*480' %}
 {%set hw_emmc = '32GB (P/M/V)' %}
-{%set hw_connectivity = '5g WiFi + BT' %}
-{%set hw_ram = '1 GB (VS/PS), 2GB (P/M/V) DDR4' %}
+{%set hw_connectivity = '2.4/5 GHz WiFi + BT' %}
+{%set hw_ram = '1 GB (VS/PS), 2 GB (P/M/V) LPDDR4' %}
 {% include "platforms/rk3566.md" %}
 
 

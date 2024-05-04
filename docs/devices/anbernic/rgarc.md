@@ -1,14 +1,14 @@
-# Anbernic RG Arc [D/S]
+# Anbernic RG ARC [D/S]
 
 ![](../../_inc/images/devices/anbernic-rgarc.png){ .off-glb }
 
 ## Overview
 !!! warning "eMMC model with legacy bootloader is not supported."
 
-{%set hw_display = '4 inch 640x480' %}
+{%set hw_display = '4-inch 640*480' %}
 {%set hw_emmc = '32GB (D)' %}
-{%set hw_connectivity = '5g WiFi + BT' %}
-{%set hw_ram = '1 GB (S), 2GB (D) DDR4' %}
+{%set hw_connectivity = '2.4/5 GHz WiFi + BT' %}
+{%set hw_ram = '1 GB (S), 2 GB (D) LPDDR4' %}
 {% include "platforms/rk3566.md" %}
 
 ## Features

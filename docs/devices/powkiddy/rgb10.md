@@ -3,10 +3,10 @@
 ![](../../_inc/images/devices/powkiddy-rgb10.png){ .off-glb }
 
 ## Overview
-{%set hw_display = '3.5 inch 480x320' %}
+{%set hw_display = '3.5-inch 480*320' %}
 {%set hw_emmc = 'None' %}
 {%set hw_connectivity = 'None' %}
-{%set hw_ram = '1 GB DDR3' %}
+{%set hw_ram = '1 GB DDR3L' %}
 {% include "platforms/rk3326.md" %}
 
 ## Emulators

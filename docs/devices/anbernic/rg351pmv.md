@@ -3,10 +3,10 @@
 ![](../../_inc/images/devices/anbernic-rg351pm.png){ .off-glb }
 
 ## Overview
-{%set hw_display = '3.5 inch 480x320 (P/M), 640x480 (V)' %}
+{%set hw_display = '3.5-inch 480*320 (P/M), 640*480 (V)' %}
 {%set hw_emmc = 'None' %}
-{%set hw_connectivity = '2.4g Wifi (M/V))' %}
-{%set hw_ram = '1 GB DDR3' %}
+{%set hw_connectivity = '2.4 GHz WiFi (M/V))' %}
+{%set hw_ram = '1 GB DDR3L' %}
 {% include "platforms/rk3326.md" %}
 
 ## Features

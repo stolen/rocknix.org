@@ -3,10 +3,10 @@
 ![](../../_inc/images/devices/hardkernel-odroid-go-advance.png){ .off-glb }
 
 ## Overview
-{%set hw_display = '3.5 inch 480x320' %}
+{%set hw_display = '3.5-inch 480*320' %}
 {%set hw_emmc = 'None' %}
-{%set hw_connectivity = 'Black edition: 2.4g (ESP32-S2)' %}
-{%set hw_ram = '1 GB DDR3' %}
+{%set hw_connectivity = 'Black Edition: 2.4 GHz (ESP32-S2)' %}
+{%set hw_ram = '1 GB DDR3L' %}
 {% include "platforms/rk3326.md" %}
 
 ## Notes
