@@ -3,10 +3,10 @@
 ![](../../_inc/images/devices/hardkernel-odroid-go-super.png){ .off-glb }
 
 ## Overview
-{%set hw_display = '5 inch 854x480' %}
+{%set hw_display = '5-inch 854*480' %}
 {%set hw_emmc = 'None' %}
 {%set hw_connectivity = 'None' %}
-{%set hw_ram = '1 GB DDR3' %}
+{%set hw_ram = '1 GB DDR3L' %}
 {% include "platforms/rk3326.md" %}
 
 ## Notes

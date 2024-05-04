@@ -3,7 +3,7 @@
 ![](../../_inc/images/devices/unbranded-game-console-r33s.png){ .off-glb }
 
 ## Overview
-{%set hw_display = '3.5 inch 640x480' %}
+{%set hw_display = '3.5-inch 640*480' %}
 {%set hw_emmc = 'None' %}
 {%set hw_connectivity = 'None' %}
 {%set hw_ram = '1 GB (some revisions 512 MB) DDR3' %}

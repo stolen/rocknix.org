@@ -3,10 +3,10 @@
 ![](../../_inc/images/devices/powkiddy-rgb30.png){ .off-glb }
 
 ## Overview
-{%set hw_display = '4 inch 720x720' %}
+{%set hw_display = '4-inch 720*720' %}
 {%set hw_emmc = 'None' %}
-{%set hw_connectivity = '5g WiFi + BT (RTL8821CS)' %}
-{%set hw_ram = '1 GB DDR4' %}
+{%set hw_connectivity = '2.4/5 GHz WiFi + BT (RTL8821CS)' %}
+{%set hw_ram = '1 GB LPDDR4' %}
 {% include "platforms/rk3566.md" %}
 
 ## Features
