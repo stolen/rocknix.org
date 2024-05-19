@@ -55,6 +55,8 @@ Download the latest `RK3566` version of ROCKNIX from the button below and follow
 
 You will need to wipe the Android partition to boot into ROCKNIX.
 
+###### WARNING - This will remove Android completely from your device.
+
 - Install ADB on your computer if you don't already have it.
   [How to Install and Use ADB, the Android Debug Bridge Utility](https://www.howtogeek.com/125769/how-to-install-and-use-abd-the-android-debug-bridge-utility/)
 
@@ -77,8 +79,6 @@ You will need to wipe the Android partition to boot into ROCKNIX.
 - Insert your ROCKNIX SD card, and run `adb reboot`
 
 - You should now be booting ROCKNIX!
-
-
 
 ## Additional References
 
