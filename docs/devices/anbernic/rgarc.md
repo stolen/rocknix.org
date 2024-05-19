@@ -62,7 +62,7 @@ You will need to wipe the Android partition to boot into ROCKNIX.
 
 - From power off and sd ejected, hold down power and volume down to get into Android recovery
 
-- Connect your ARC-D to your computer via USB
+- Connect the device to your computer via USB using the "DC" port on the ARC-D.
 
 - Switch ADB into root mode using `adb root` - You may get a timeout error here, continue on anyway.
 
