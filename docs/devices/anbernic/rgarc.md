@@ -3,6 +3,7 @@
 ![](../../_inc/images/devices/anbernic-rgarc.png){ .off-glb }
 
 ## Overview
+
 !!! warning "eMMC model with legacy bootloader is not supported."
 
 {%set hw_display = '4-inch 640*480' %}
@@ -13,11 +14,11 @@
 
 ## Features
 
-| Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
-| -- | -- |
-| :material-harddisk: Storage | ROCKNIX can be installed to the emmc on P/M/V models or run from an SD Card, and an second SD card can be used to store games |
-| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
-| :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
+| Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| :material-harddisk: Storage                                                                             | ROCKNIX can be installed to the emmc on P/M/V models or run from an SD Card, and an second SD card can be used to store games |
+| :material-wifi: Wifi                                                                                    | Can be turned on in Emulation Station under Main Menu > Network Settings                                                      |
+| :simple-bluetooth: Bluetooth                                                                            | Supports bluetooth audio and controllers                                                                                      |
 
 ## Controls
 
@@ -49,6 +50,35 @@ Download the latest `RK3566` version of ROCKNIX from the button below and follow
 
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
+
+##### RG-ARC-D Users
+
+You will need to wipe the Android partition to boot into ROCKNIX.
+
+- Install ADB on your computer if you don't already have it.
+  [How to Install and Use ADB, the Android Debug Bridge Utility](https://www.howtogeek.com/125769/how-to-install-and-use-abd-the-android-debug-bridge-utility/)
+
+- From power off and sd ejected, hold down power and volume down to get into Android recovery
+
+- Connect your ARC-D to your computer via USB
+
+- Switch ADB into root mode using `adb root` - You may get a timeout error here, continue on anyway.
+
+- If you would like a backup of your Android partition, run
+  `adb pull /dev/block/mmcblk0 android.img`
+
+- Get an ADB shell with `adb shell`
+
+- Wipe the Android partition: `dd if=/dev/zero of=/dev/block/mmcblk0 bs=4M`
+  This will take a few minutes and when it is done you will get an "out of space" message.
+
+- Exit the shell `exit`
+
+- Insert your ROCKNIX SD card, and run `adb reboot`
+
+- You should now be booting ROCKNIX!
+
+
 
 ## Additional References
 
