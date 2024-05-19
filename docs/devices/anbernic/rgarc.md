@@ -3,7 +3,6 @@
 ![](../../_inc/images/devices/anbernic-rgarc.png){ .off-glb }
 
 ## Overview
-
 !!! warning "eMMC model with legacy bootloader is not supported."
 
 {%set hw_display = '4-inch 640*480' %}
@@ -14,11 +13,11 @@
 
 ## Features
 
-| Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes                                                                                                                         |
-| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| :material-harddisk: Storage                                                                             | ROCKNIX can be installed to the emmc on P/M/V models or run from an SD Card, and an second SD card can be used to store games |
-| :material-wifi: Wifi                                                                                    | Can be turned on in Emulation Station under Main Menu > Network Settings                                                      |
-| :simple-bluetooth: Bluetooth                                                                            | Supports bluetooth audio and controllers                                                                                      |
+| Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
+| -- | -- |
+| :material-harddisk: Storage | ROCKNIX can be installed to the emmc on P/M/V models or run from an SD Card, and an second SD card can be used to store games |
+| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
+| :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 
 ## Controls
 
