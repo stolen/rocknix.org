@@ -1,7 +1,7 @@
 site_name: ROCKNIX Wiki
 site_url: https://rocknix.org
-repo_url: https://github.com/ROCKNIX/rocknix.org
-repo_name: rocknix.org
+repo_url: https://github.com/ROCKNIX/distribution
+repo_name: GitHub
 copyright: Copyright Creative Commons Attribution-ShareAlike 4.0 International
 theme:
   language: en
