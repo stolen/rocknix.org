@@ -33,11 +33,7 @@
 {%set btn_load = 'L2' %}
 {%set btn_menu = 'L3' %}
 {%include 'controls/ppsspp.md' %}
-
 {%include 'controls/hypseus-singe.md' %}
-
-{%set btn_pre1 = 'SELECT' %}
-{%set btn_pre2 = 'START' %}
 {%include 'controls/extra.md' %}
 
 ## Emulators

@@ -1,3 +1,7 @@
+{% if not btn_menu %}
+{% set btn_menu = 'L3' %}
+{% endif %}
+
 ### PPSSPP-SA ([PSP](../../../systems/psp))
 
 | Button Combo | Action |
@@ -10,7 +14,7 @@
 | ++"{{ btn_west }}"++ | Square |
 | ++"L1"++ | L |
 | ++"R1"++ | R |
-| ++"{{ btn_save }}"++ | Save State |
-| ++"{{ btn_load }}"++ | Load State |
+| ++"R2"++ | Save State |
+| ++"L2"++ | Load State |
 | ++"{{ btn_menu }}"++ | Open Menu |
 

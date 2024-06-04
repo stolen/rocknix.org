@@ -23,11 +23,11 @@
 {%set btn_south = 'B(SOUTH)' %}
 {%set btn_east = 'A(EAST)' %}
 {%include 'controls/retroarch.md' %}
-{%set btn_prefix = 'F1' %}
+{%set btn_hotkey_a = 'F1' %}
 {%include 'controls/aethersx2.md' %}
+{%set btn_menu = 'F1' %}
 {%set btn_save = 'R2' %}
 {%set btn_load = 'L2' %}
-{%set btn_menu = 'F1' %}
 {%set btn_swap_a = 'L3' %}
 {%set btn_swap_b = 'F2' %}
 {%include 'controls/drastic.md' %}
@@ -39,8 +39,7 @@
 {%include 'controls/hypseus-singe.md' %}
 {%include 'controls/openbor.md' %}
 {%include 'controls/vice.md' %}
-{%set btn_pre1 = 'F1' %}
-{%set btn_pre2 = 'F2' %}
+{%set btn_hotkey_b = 'F2' %}
 {%include 'controls/extra.md' %}
 
 ## Emulators

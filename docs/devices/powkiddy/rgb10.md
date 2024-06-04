@@ -9,6 +9,19 @@
 {%set hw_ram = '1 GB DDR3L' %}
 {% include "platforms/rk3326.md" %}
 
+## Controls
+
+{%set btn_north = 'Y(NORTH)' %}
+{%set btn_west = 'X(WEST)' %}
+{%set btn_south = 'A(SOUTH)' %}
+{%set btn_east = 'B(EAST)' %}
+
+{%include 'controls/retroarch.md' %}
+
+{% set btn_hotkey_a = '-(MINUS)' %}
+{% set btn_hotkey_b = '\+(PLUS)' %}
+{%include 'controls/mednafen.md' %}
+
 ## Emulators
 
 - [Platform Documentation (RK3326)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3326)

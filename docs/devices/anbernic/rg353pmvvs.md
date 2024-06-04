@@ -32,16 +32,8 @@
 {%include 'controls/retroarch.md' %}
 {%include 'controls/mednafen.md' %}
 {%include 'controls/mupen64plus.md' %}
-
-{%set btn_save = 'R2' %}
-{%set btn_load = 'L2' %}
-{%set btn_menu = 'L3' %}
 {%include 'controls/ppsspp.md' %}
-
 {%include 'controls/hypseus-singe.md' %}
-
-{%set btn_pre1 = 'SELECT' %}
-{%set btn_pre2 = 'START' %}
 {%include 'controls/extra.md' %}
 
 ## Notes
@@ -52,6 +44,10 @@ Download the latest `RK3566` version of ROCKNIX from the button below and follow
 
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
+
+##### P/M/V Users
+
+{%include 'platforms/android-wipe.md' %}
 
 ## Additional References
 
