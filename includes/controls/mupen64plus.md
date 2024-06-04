@@ -1,22 +1,44 @@
+{% if not btn_south %}
+{% set btn_south = 'B' %}
+{% endif %}
+{% if not btn_west %}
+{% set btn_west = 'Y' %}
+{% endif %}
+{% if not btn_c_up %}
+{% set btn_c_up = 'Right Analog Up' %}
+{% endif %}
+{% if not btn_c_down %}
+{% set btn_c_down = 'Right Analog Down' %}
+{% endif %}
+{% if not btn_c_left %}
+{% set btn_c_left = 'Right Analog Left' %}
+{% endif %}
+{% if not btn_c_right %}
+{% set btn_c_right = 'Right Analog Right' %}
+{% endif %}
+{% if not btn_hotkey_a %}
+{% set btn_hotkey_a = 'SELECT' %}
+{% endif %}
+
 ### Mupen64Plus-SA ([Nintendo 64](../../../systems/n64))
 
 | Button Combo | Action |
 | -- | -- |
 | ++"START"++ | Start |
-| ++"{{ btn_east }}"++ | A |
+| ++"{{ btn_south }}"++ | A |
 | ++"{{ btn_west }}"++ | B |
-| ++"Right Analog Up"++ | C Up |
-| ++"Right Analog Down"++ | C Down |
-| ++"Right Analog Left"++ | C Left |
-| ++"Right Analog Right"++ | C Right |
+| ++"{{ btn_c_up }}"++ | C Up |
+| ++"{{ btn_c_down }}"++ | C Down |
+| ++"{{ btn_c_left }}"++ | C Left |
+| ++"{{ btn_c_right }}"++ | C Right |
 | ++"L2"++ | Z |
 | ++"L1"++ | L |
 | ++"R1"++ | R |
-| ++"SELECT"+"START"++ | Quit Game |
-| ++"SELECT"+"R1"++ | Save State |
-| ++"SELECT"+"L1"++ | Load State |
-| ++"SELECT"+"{{ btn_west }}"++ | Take Screenshot |
-| ++"SELECT"+"{{ btn_south }}"++ | Reset Game |
+| ++"{{ btn_hotkey_a }}"+"START"++ | Quit Game |
+| ++"{{ btn_hotkey_a }}"+"R1"++ | Save State |
+| ++"{{ btn_hotkey_a }}"+"L1"++ | Load State |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_west }}"++ | Take Screenshot |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_south }}"++ | Reset Game |
 
 #### Notes:
 

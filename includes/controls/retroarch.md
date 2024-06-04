@@ -1,13 +1,22 @@
+{% if not btn_hotkey_a %}
+{% set btn_hotkey_a = 'SELECT' %}
+{% endif %}
+{% if not btn_north %}
+{% set btn_north = 'X(NORTH)' %}
+{% endif %}
+{% if not btn_west %}
+{% set btn_west = 'X(WEST)' %}
+{% endif %}
 ### RetroArch Hotkeys
 
 | Button Combo | Action |
 | -- | -- |
-| ++"SELECT"+"START"++ <sup>(x2)</sup> | Quit Game |
-| ++"SELECT"+"R1"++ | Save State |
-| ++"SELECT"+"L1"++ | Load State |
-| ++"SELECT"+"{{ btn_north }}"++ | Open RA Menu |
-| ++"SELECT"+"{{ btn_west }}"++ | Show FPS |
-| ++"SELECT"+"R2"++ | Fast-Forward |
+| ++"{{ btn_hotkey_a }}"+"START"++ <sup>(x2)</sup> | Quit Game |
+| ++"{{ btn_hotkey_a }}"+"R1"++ | Save State |
+| ++"{{ btn_hotkey_a }}"+"L1"++ | Load State |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_north }}"++ | Open RA Menu |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_west }}"++ | Show FPS |
+| ++"{{ btn_hotkey_a }}"+"R2"++ | Fast-Forward |
 
 #### Notes:
 

@@ -21,24 +21,26 @@
 
 ## Controls
 
-{%set btn_north = 'X(NORTH)' %}
-{%set btn_west = 'Y(WEST)' %}
-{%set btn_south = 'B(SOUTH)' %}
-{%set btn_east = 'A(EAST)' %}
+{%set btn_north = 'Y(NORTH)' %}
+{%set btn_west = 'X(WEST)' %}
+{%set btn_south = 'A(SOUTH)' %}
+{%set btn_east = 'B(EAST)' %}
 
 {%include 'controls/retroarch.md' %}
 {%include 'controls/mednafen.md' %}
+
+{%set btn_west = 'X' %}
+{%set btn_south = 'A' %}
+{%set btn_c_up = 'Z' %}
+{%set btn_c_down = 'B' %}
+{%set btn_c_left = 'Y' %}
+{%set btn_c_right = 'C' %}
 {%include 'controls/mupen64plus.md' %}
 
-{%set btn_save = 'R2' %}
-{%set btn_load = 'L2' %}
-{%set btn_menu = 'L3' %}
+* The default mapping maps the Nintendo 64 joystick to the d-pad, by selecting custom input configuration in advanced game options it will map the Nintendo 64 d-pad to the Arc d-pad.
+
 {%include 'controls/ppsspp.md' %}
-
 {%include 'controls/hypseus-singe.md' %}
-
-{%set btn_pre1 = 'SELECT' %}
-{%set btn_pre2 = 'START' %}
 {%include 'controls/extra.md' %}
 
 ## Notes

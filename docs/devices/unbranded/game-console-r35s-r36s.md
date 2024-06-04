@@ -18,9 +18,6 @@
 
 {%include 'controls/retroarch.md' %}
 {%include 'controls/mednafen.md' %}
-
-{%set btn_pre1 = 'SELECT' %}
-{%set btn_pre2 = 'START' %}
 {%include 'controls/extra.md' %}
 
 ## Emulators
