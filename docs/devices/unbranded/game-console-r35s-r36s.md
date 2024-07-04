@@ -38,9 +38,10 @@ Download the latest `RK3326` version of ROCKNIX from the button below and follow
 Recent R36s have new displays that need some extra actions to work.
 
 The simplest way so far is:
-  * Determine which panel do you have (or just try every option until it works)
-  * Download a `mipi-panel.dtbo.r36s-panel*` at https://github.com/stolen/r.nix-distribution/releases/tag/generic-mipi-driver
-  * Rename the downloaded file and put it to a boot (`ROCKNIX`) partition as `overlays/mipi-panel.dtbo`
+
+* Determine which panel do you have (or just try every option until it works)
+* Download a `mipi-panel.dtbo.r36s-panel*` [there](https://github.com/stolen/r.nix-distribution/releases/tag/panel_overlays)
+* Rename the downloaded file and put it to a boot (`ROCKNIX`) partition as `overlays/mipi-panel.dtbo`
 
 These files mostly have just basic refresh rate (77.378 FPS) (`panel4` has 50, 60, 75 because we tested it)
 
