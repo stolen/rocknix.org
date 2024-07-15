@@ -45,4 +45,16 @@ The simplest way so far is:
 
 These files mostly have just basic refresh rate (77.378 FPS) (`panel4` has 50, 60, 75 because we tested it)
 
-If you need better modes and are okay with Python and device trees, there is a WiP script which extracts panel info from a stock dtb, generates some modes and embeds it in .dtbo file: [importpanel.py](https://github.com/stolen/r.nix-distribution/blob/generic-dsi-driver-updates/packages/kernel/drivers/generic-dsi/scripts/importpanel.py).
+If you have an original `.dtb` file, you can generate a `mipi-panel.dtbo` from it.  
+Assuming you have an [SSH](/faqs/#how-do-i-log-in-over-ssh-or-samba) access and you have `scp`'d the original dtb as `rk3326-r35s-linux.dtb`, the process would be as follows:
+```console
+RK3326:~ # mount -o remount,rw /flash
+RK3326:~ # mkdir -p /flash/overlays/
+RK3326:~ # /usr/libexec/generic-dsi/importpanel.py rk3326-r35s-linux.dtb -O /flash/overlays/mipi-panel.dtbo
+RK3326:~ # sync; mount -o remount,ro /flash/
+```
+Here we just make an overlays directory writable, then call a script that does all the importing stuff.  
+Feel free to run this script on your PC, modify it and experiment with panel timings.  
+
+This script adds a bunch of potentially useful refresh rates, but we have very few knowledge on which modes work well.  
+Please check them with `wlr-randr` or with game configuration and tell us which modes work with your panel.
