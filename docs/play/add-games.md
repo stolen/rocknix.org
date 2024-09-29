@@ -1,6 +1,6 @@
 # :material-layers-plus: Adding Games to ROCKNIX
 
-ROCKNIX has a few options for adding games and the option you choose will depend on the device you have and its available functionality *(For example, some devices do not have networking capabilites so those devices will not be able to use the network transfer option)*.  To create the default set of game directories on your device, choose the 'CREATE GAME DIRECTORIES' option in the System Settings menu.
+ROCKNIX has a few options for adding games and the option you choose will depend on the device you have and its available functionality *(For example, some devices do not have networking capabilites so those devices will not be able to use the network transfer option)*.
 
 This page will aim to document all possible options and indicate when you might use a given one over another.
 
@@ -28,7 +28,7 @@ When Merged Storage is disabled, or when you are using ExFAT or FAT32, ROCKNIX w
 ### Troubleshooting
 
 * It is possible to create a conflict which will prevent games from being displayed in EmulationStation.  This can usually be resolved by executing `/usr/bin/cleanup_overlay`.  Note: This will reboot your device.
-* If no game folders appear in /storage/roms after running `CREATE GAME DIRECTORIES`, make sure you have a `roms` directory on your microsd.
+* If no game folders appear in /storage/roms, make sure you have a `roms` directory on your microsd and reboot.
 
 ## Option 1: Network Transfer
 
