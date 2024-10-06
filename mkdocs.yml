@@ -219,6 +219,8 @@ nav:
         - Odroid N2/N2+/N2L: devices/hardkernel/odroid-n2.md
       - Indiedroid:
         - Nova: devices/indiedroid/nova.md
+      - MagicX:
+        - XU Mini M: devices/magicx/xu-mini-m.md
       - Orange Pi:
         - Orange Pi 5: devices/orange-pi/orange-pi-5.md
       - Powkiddy:
