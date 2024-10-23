@@ -25,11 +25,13 @@ search:
 {%set btn_west = 'Y(WEST)' %}
 {%set btn_south = 'B(SOUTH)' %}
 {%set btn_east = 'A(EAST)' %}
-{%set btn_hotkey_a = 'Function' %}
+{%set btn_hotkey_a = 'HOME' %}
 
 {%include 'controls/retroarch.md' %}
 {%include 'controls/mupen64plus.md' %}
 {%include 'controls/ppsspp.md' %}
+{%include 'controls/dolphin.md' %}
+{%include 'controls/aethersx2.md' %}
 
 {%include 'controls/extra.md' %}
 
