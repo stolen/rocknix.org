@@ -56,9 +56,11 @@ Enabling Simple HTTP Server in Network settings lets you upload and download fil
     - You will be prompted for a username and password.
     - For name enter `root` and your password will be the value from `Root Password` in the System Settings menu.
 
-### FTP
+### SFTP/SSH
 
-Using your FTP program of choice; set up an SFTP connection to the IP Address seen in the Network Settings menu.  Make sure the Port is set to `22`.  The username is `root` and your password will be the value from `Root Password` in the System Settings menu. 
+Using your SFTP program of choice; set up an SFTP connection to the IP Address seen in the Network Settings menu.  Make sure the Port is set to `22`.  The username is `root` and your password will be the value from `Root Password` in the System Settings menu. 
+
+You can also transfer files using the scp command line tool, which is part of OpenSSH and is included with recent versions of Windows and Linux
 
 ### After connecting
 
@@ -78,7 +80,7 @@ Games can also be added via an SD card.  There are 2 primary methods for this de
 - Add your games and place your SD card back into slot 1 and boot up ROCKNIX.
 
 #### If you *do* wish to use a second card in Slot 2 for games
-- With your device turned off; insert a FAT32/ExFAT/ext4 formated SD card into slot 2 of your device.
+- With your device turned off; insert a FAT32/ExFAT/ext4/btrfs formated SD card into slot 2 of your device.
 - Turn your device on.
 - When ROCKNIX completes its boot process, create your game directories by selecting the `Create Game Directories` option in `System Settings`.
 - Now you can turn off your device, remove your SD card from slot 2 and open it on your PC.
@@ -113,3 +115,24 @@ ROCKNIX has a built in File Manager and you can use it to access connected USB d
 ## Option 4: Linux OS
 
 ROCKNIX' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into an linux OS will enable you to browse the directories and add files directly.
+
+## Option 5: USB Gaget Modes
+
+If your device can be put into USB gadget mode you can attempt to put the device into a USB Gadget mode which may enable you to browse the internal SD card over a USB cable. To access the gadget mode navigate to ES 'Network Settings' and scroll down to 'USB Gadget Function'. This option may not be available on all devices. MTP mode is a file transfer mode and ECM mode will create a point-to-point IP network which will then enable use of SFTP/SAMBA transfer methods if successful even when the device would otherwise not have Wireless/network functions.
+
+### NFS Storage
+
+NFS Storage differs to the other approaches in that you do not need to copy any files to the device. It relies on a pre-curated and shared roms location to exist on a Network Attached Storage (NAS) Network File System on the network which the device is connected to. This allows you to quickly load pre-scrapped/existing collections without the need to synchromise or copy anything to an SD card or internal storage.
+
+Unlike SMB/Samba file shares, NFS was designed specifically for fast IO and to work and present like a local file-system to the OS. Using NFS even on 2.4ghz networks for rom collections often provides a better experience than even the internal SD card can support. NFS servers are relatively trivial to setup and can be installed on Windows through the features function.
+
+NFS support in rocknix is implemented as a variation on the merged storage approach. The NFS URI(Universal Resource Identifier) is mounted to /storage/games-external and the local storage is mounted in an overlay as the Upper location. Meaning saves / writes to are kept local to the device. 
+
+To Use NFS create a file in /storage/ called '.nfs-mount' with a single entry of the format:
+```NFS_PATH=<valid NFS uri>```
+
+i.e  something similar to 
+
+```NFS_PATH=nfs.example.com:/path/containing-a-roms-subdir```
+
+Once created, ensure you are connected to a Network segment that can reach the NFS URI (local wifi or connected via tailscale/vpn) and navigate to the 'Tools' collection in ES. Execute the 'Mount NFS' entry. ES should restart and you should now have a merged collection available in ES.
