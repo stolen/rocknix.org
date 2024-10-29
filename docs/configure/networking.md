@@ -20,3 +20,4 @@ When you exit the network settings menu your network should activiate.
 - If you want to enable netplay to be able to play multiplayer across devices please see the page on [Netplay](../../play/netplay).
 - Check out [Cloud Sync](../cloud-sync) to see the available options and steps for setting up cloud sync services.
 - If you would like to earn achievements while playing games please check out [RetroAchievements](../../play/retro-achievements/)
+- If you have pre-existing collections you can use NFS(Network File System) to mount an NFS share which will be merged with the internal storage to quickly access pre-curated collections instantly(sometimes refered to as streaming) see [Add Games](../../play/add-games)

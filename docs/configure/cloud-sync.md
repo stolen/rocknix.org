@@ -251,3 +251,11 @@ where `rg503` is the name of the remote connection (rclone example names the rem
 The names of the top-level folders within Dropbox cloud service will be displayed
 
 ![Dropbox folder names are displayed](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20list%20top-level%20directories%20on%20dropbox.png)
+
+## NFS Storage
+
+Create a file in '/storage/' called '.nfs-mount' containing a single line of the format:
+
+```NFS_PATH=<Valid NFS URI>```
+
+Navigate to 'Tools' and select 'Mount NFS' entry. The NFS path will be mounted to /storage/games-external and an overlay merge with /storage/games-internal as the upper will be created at /storage/roms. Saves/state will be written locally. 
