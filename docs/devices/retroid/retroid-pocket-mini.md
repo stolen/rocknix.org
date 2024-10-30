@@ -9,15 +9,18 @@ search:
 
 ## Overview
 
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
+| Device | CPU / Architecture | Kernel | GL driver | Vulkan driver | Interface |
 | -- | -- | -- | -- | -- |
-| Retroid Pocket Mini | Qualcomm SD865 | Mainline Linux | Freedreno / Turnip | Weston + Emulation Station |
+| Retroid Pocket Mini | Qualcomm SD865 | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
 
 ## Features
 
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
 | :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
+| :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
+| :material-fan: Fan | Can be set globally, per system or per game. |
+| :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
 
 ## Controls
 
