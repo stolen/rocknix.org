@@ -172,9 +172,7 @@ Building ROCKNIX is easy.  From the root of your local repository, issue one of 
 |RK3588||`make docker-RK3588`|`make RK3588`|
 |RK3326||`make docker-RK3326`|`make RK3326`|
 |RK3566||`make docker-RK3566`|`make RK3566`|
-|RK3566-X55|RK3566|`make docker-RK3566-X55`|`make RK3566-X55`|
 |S922X||`make docker-S922X`|`make S922X`|
-|S922X-PANFROST||`make docker-S922X-PANFROST`|`make S922X-PANFROST`|
 |ALL DEVICES||`make docker-world`|`make world`|
 
 > Devices that list a dependency require you to build the dependency first, since that build will be used as the root of the device you are building.
@@ -183,36 +181,6 @@ For example, the following command uses Docker to build the RK3588 image.
 
 ``` bash
 make docker-RK3588
-```
-
-### S922X Platform Builds
-Two separate builds are available for the S922X platform. 
-
-1. S922X (published release image) - Mali binary blob GPU drivers, with OpenGL ES and Vulkan support, 64-bit only
-1. S922X-PANFROST (source-only build) - open-source Panfrost GPU drivers, with OpenGL and OpenGL ES support, includes 32-bit libraries
-
-The standard S922X build with Vulkan support has significantly better Playstation Portable, Dreamcast, Gamecube and Playstation 2 emulation performance. The S922X-PANFROST build with OpenGL and 32-bit support has better Portmaster support.
-
-The `USE_MALI` environment variable determines which build is performed, and forces packages that can be built with / without Vulkan support to be cleaned. It is only necessary to specify the `USE_MALI` environment variable if you want to build both versions, and want to ensure packages are correctly built with / without Vulkan support.
-
-To build the standard S922X image:
-
-```
-# Standard build target
-make S922X
-
-# Standard build target, forcing packages to be cleaned
-USE_MALI=yes make S922X
-```
-
-To build the S922X-PANFROST image:
-
-```
-# Standard build target, forcing packages to be cleaned and Panfrost GPU drivers to be used
-USE_MALI=no make S922X
-
-# Convenience build target, same result as above
-make S922X-PANFROST
 ```
 
 ### Rightsized Builds
