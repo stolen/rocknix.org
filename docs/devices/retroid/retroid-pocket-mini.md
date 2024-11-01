@@ -10,7 +10,7 @@ search:
 ## Overview
 
 | Device | CPU / Architecture | Kernel | GL driver | Vulkan driver | Interface |
-| -- | -- | -- | -- | -- |
+| -- | -- | -- | -- | -- | -- |
 | Retroid Pocket Mini | Qualcomm SD865 | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
 
 ## Features
