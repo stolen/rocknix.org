@@ -35,6 +35,7 @@ search:
 {%include 'controls/ppsspp.md' %}
 {%include 'controls/dolphin.md' %}
 {%include 'controls/aethersx2.md' %}
+{%include 'controls/xemu.md' %}
 
 {%include 'controls/extra.md' %}
 
