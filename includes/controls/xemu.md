@@ -7,9 +7,7 @@
 | -- | -- |
 | ++"{{ btn_hotkey_a }}"++ | Open Menu |
 
-> You need bios files from the following table.
-
-| Required Files | Path |
+| Required Bios Files | Path |
 | --- | --- |
 | Complex_4627v1.03.bin | `/roms/bios/xemu/bios` |
 | mcpx_1.0.bin | `/roms/bios/xemu/bios` |

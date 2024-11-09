@@ -9,10 +9,6 @@
 | ++"{{ btn_hotkey_a }}"+"L1"++ | Load State |
 | ++"{{ btn_hotkey_a }}"+"{{ btn_north }}"++ | Open Menu |
 
-## Bios
-
-> You need bios files from the following table.
-
-| Required Files | Path |
-| --- | --- | --- |
+| Required Bios Files | Path |
+| --- | --- |
 | SCPH-70012.bin | `/roms/bios/aethersx2/bios` |
