@@ -5,10 +5,14 @@
 
 | Button Combo | Action |
 | -- | -- |
-| ++"{{ btn_hotkey_a }}"+"{{ btn_south }}"++ | Quit Game |
 | ++"{{ btn_hotkey_a }}"+"R1"++ | Save State |
 | ++"{{ btn_hotkey_a }}"+"L1"++ | Load State |
 | ++"{{ btn_hotkey_a }}"+"{{ btn_north }}"++ | Open Menu |
-| ++"{{ btn_hotkey_a }}"+"{{ btn_west }}"++ | Cycle Aspect Ratio |
-| ++"{{ btn_hotkey_a }}"+"{{ btn_east }}"++ | Screenshot |
 
+## Bios
+
+> You need bios files from the following table.
+
+| Emulator | Required Files | Path |
+| --- | --- | --- |
+| AetherSX2 | SCPH-70012.bin | `/roms/bios/aethersx2/bios` |
