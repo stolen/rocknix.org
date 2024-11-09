@@ -13,6 +13,6 @@
 
 > You need bios files from the following table.
 
-| Emulator | Required Files | Path |
+| Required Files | Path |
 | --- | --- | --- |
-| AetherSX2 | SCPH-70012.bin | `/roms/bios/aethersx2/bios` |
+| SCPH-70012.bin | `/roms/bios/aethersx2/bios` |
