@@ -231,6 +231,7 @@ nav:
         - RK2023: devices/powkiddy/rk2023.md
         - RGB20SX: devices/powkiddy/rgb20sx.md
         - RGB30: devices/powkiddy/rgb30.md
+        - X35S: devices/powkiddy/x35s.md
         - X55: devices/powkiddy/x55.md
         - XU10: devices/powkiddy/xu10.md
       - Retroid:
