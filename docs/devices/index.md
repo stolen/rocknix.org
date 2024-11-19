@@ -33,10 +33,12 @@ We provide builds for the following devices:
   * [RK2023](powkiddy/rk2023)
   * [RGB20SX](powkiddy/rgb20sx)
   * [RGB30](powkiddy/rgb30)
+  * [X35S](powkiddy/x35s)
   * [X55](powkiddy/x55)
   * [XU10](powkiddy/xu10)
 * Retroid
   * [Retroid Pocket Mini](retroid/retroid-pocket-mini)
+  * [Retroid Pocket Mini](retroid/retroid-pocket-5)
 * Unbranded
   * [Game Console R33S](unbranded/game-console-r33s)
   * [Game Console R35S R36S](unbranded/game-console-r35s-r36s)
