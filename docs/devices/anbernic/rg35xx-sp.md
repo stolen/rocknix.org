@@ -44,6 +44,7 @@
 Download the latest `H700` version of ROCKNIX from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
 
 Important, before booting the device, edit the file `extlinux/extlinux.conf` and change the line `  FDT /sun50i-h700-anbernic-rg35xx-plus` to `  FDT /sun50i-h700-anbernic-rg35xx-sp.dtb`.
+
 If the display doesn't seems to works (flickering, noise, etc...), you may have a version with a new display, in that case use `  FDT /sun50i-h700-anbernic-rg35xx-sp-rev6-panel.dtb`
 
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
