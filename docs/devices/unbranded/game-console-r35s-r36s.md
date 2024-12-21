@@ -50,6 +50,7 @@ Assuming you have an [SSH](/faqs/#how-do-i-log-in-over-ssh-or-samba) access and 
 ```console
 RK3326:~ # mount -o remount,rw /flash
 RK3326:~ # mkdir -p /flash/overlays/
+RK3326:~ # ### Be not afraid! importpanel.py may run for a minute or two for some panels
 RK3326:~ # /usr/libexec/generic-dsi/importpanel.py rk3326-r35s-linux.dtb -O /flash/overlays/mipi-panel.dtbo
 RK3326:~ # sync; mount -o remount,ro /flash/
 ```
