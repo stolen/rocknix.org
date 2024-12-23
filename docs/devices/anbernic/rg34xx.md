@@ -1,6 +1,6 @@
-# Anbernic RG35XX H
+# Anbernic RG34XX
 
-![](../../_inc/images/devices/anbernic-rg35xxh.png){ .off-glb }
+![](../../_inc/images/devices/anbernic-rg34xx.png){ .off-glb }
 
 ## Overview
 {%set hw_display = '3.5-inch 640*480' %}
@@ -11,7 +11,7 @@
 
 | Device | CPU / Architecture | Kernel | GL driver | Interface |
 | -- | -- | -- | -- | -- |
-| RG35XX H | Allwinner H700 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
+| RG34XX | Allwinner H700 (ARM) | Mainline Linux | Panfrost | Sway + Emulation Station |
 
 ## Features
 
@@ -41,13 +41,9 @@
 
 ### Installation
 
-!!! note "The H700 release of ROCKNIX is not yet available."
-
 Download the latest `H700` version of ROCKNIX from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
 
-!!! warning "Before booting the device, edit the file `extlinux/extlinux.conf` and change the line `  FDT /sun50i-h700-anbernic-rg35xx-plus` to `  FDT /sun50i-h700-anbernic-rg35xx-h.dtb`."
-
-If the display doesn't seems to works (flickering, noise, etc...), you may have a version with a new display, in that case use `  FDT /sun50i-h700-anbernic-rg35xx-h-rev6-panel.dtb`
+!!! warning "Before booting the device, edit the file `extlinux/extlinux.conf` and change the line `  FDT /sun50i-h700-anbernic-rg35xx-plus` to `  FDT /sun50i-h700-anbernic-rg34xx.dtb`."
 
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
