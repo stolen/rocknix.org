@@ -46,13 +46,42 @@ Enabling Simple HTTP Server in Network settings lets you upload and download fil
 ### SMB
 
 - Windows:
-    - open a Windows Explorer window, and type in `\\[YOUR IP ADDRESS]`; replace `[YOUR IP ADDRESS]` with the IP Address seen in the Network Settings menu.
-    - You will be prompted for a username and password. 
+    - To avoid typing device name/address it is recommended to make your network connection "Private".  
+      Windows trusts "Private" connections and shows available shares in "Network".  
+      In Settings, open "Network % internet", click on connection's Properties and switch to "Private"
+      <details> <summary>Screenshot: Making network Private in Windows</summary>
+        <img src="../../_inc/images/add-games/windows_network_private.png" />
+      </details>
+    - With "Private" connection you will likely see your device in Windows Explorer's "Network"
+      <details> <summary>Screenshot: Handheld in Windows network</summary>
+        <img src="../../_inc/images/add-games/windows_network_shares.png" />
+      </details>
+    - If you don't see your device (if you chose to stay with "Public" network or if something went wrong) you can access your device by hostname.  
+      See (or set as you like) your device hostname in ++"START"++/`Network settings` (let it be `RK3566` as on screenshots).  
+      In Explorer address string type `\\[DEVICE HOSTNAME].local` (replace `[DEVICE HOSTNAME]` with proper name) (`\\RK3566.local` on screenshot)
+      <details> <summary>Screenshot: Open network share by hostname in Windows</summary>
+        <img src="../../_inc/images/add-games/hostname.png" />
+        <img src="../../_inc/images/add-games/windows_smb_by_hostname.png" />
+      </details>
+    - If event that fails, don't worry. You can access your device by IP address.  
+      open a Windows Explorer window, and type in `\\[YOUR IP ADDRESS]`; replace `[YOUR IP ADDRESS]` with the IP Address seen in the Network Settings menu.
+    - You may be prompted for a username and password. 
     - The username is `root` and your password (`rocknix` by default) can be found in the `System Settings`/`Security` menu.
+
 - MacOS: 
-    - open Finder and select `Go > Connect to Server` from the top menu.
-    - In the address bar that appears, type `smb://[YOUR IP ADDRESS]`; replace `[YOUR IP ADDRESS]` with the IP Address seen in the Network Settings menu.
-    - You will be prompted for a username and password.
+    - You will likely just see your device in "Shared" section of Finder
+      <details> <summary>Screenshot: Handheld in Mac OS Finder</summary>
+        <img src="../../_inc/images/add-games/mac_samba_share.png" />
+      </details>
+    - If that fails, you can connect manually by hostname or IP.  
+      Open Finder and press `Cmd`+`K` (or select `Go > Connect to Server` from the top menu).
+      In the address bar that appears, type `smb://[ADDRESS]`; replace `[ADDRESS]` with hostname with `.local` suffix or with the IP Address seen in the Network Settings menu.
+      <details> <summary>Screenshot: Open network share by hostname in Mac OS</summary>
+        <img src="../../_inc/images/add-games/hostname.png" />
+        <img src="../../_inc/images/add-games/mac_smb_by_hostname.png" />
+      </details>
+
+    - You may be prompted for a username and password.
     - For name enter `root` and your password (`rocknix` by default) can be found in the `System Settings`/`Security` menu.
 
 ### SFTP/SSH
@@ -69,7 +98,65 @@ You can also transfer files using the scp command line tool, which is part of Op
 - Open the `roms` folder and you will see a list of folders where games and bios files can be placed. *(Please see the systems section of the wiki for details on where each system's files should be placed)*
 - After you have added your games you can get them to display in EmulationStation by pressing ++"START"++ to open the Main Menu, then open `Game Settings` then select `Update Gamelists` under the Tools header.
 
-## Option 2: SD Card
+## Option 2: USB Gaget Modes
+
+Many devices can be USB gadgets allowing you to transfer files over USB cable.
+
+- RK3326 has only one data USB port, so you need to connect cable to "OTG" port.  
+  Some older Powkiddy devices (ones with wi-fi switch) have built-in USB hub making gadget impossible.
+- On other devices use the port you use to charge the console ("DC")
+
+### Network gadget (former ECM)
+
+This mode is most useful. You get a network connection between your PC and console, and then just use Samba or SFTP.
+
+- In EmulationStation's Network Settings: Enable Samba (Windows shares) and/or SSH, switch gadget mode to "network".  
+  Don't forget to exit settings to apply changes!
+  <details> <summary>Screenshot: Needed options configured</summary>
+    <img src="../../_inc/images/add-games/gadget_network_samba.png" />
+  </details>
+
+- Now your PC should see a new network connection. Check it out in PC's network settings!
+  Here "Ethernet 5" with "No internet" is a console gadget connection.  
+  Initially Properties will say "Public network".
+  <details> <summary>Screenshot: New gadget connection in Windows</summary>
+    <img src="../../_inc/images/add-games/windows_new_connection.png" />
+  </details>  
+
+- *Windows only:* You need to change your network profile type to "Private" for easier access.  
+  Click on Properties and switch to "Private"
+  <details> <summary>Screenshot: Making network Private in Windows</summary>
+    <img src="../../_inc/images/add-games/windows_network_private.png" />
+  </details>
+
+- Now, when your PC trusts this connection, you will see your Rocknix device in "Network"
+  <details> <summary>Screenshot: Handheld in Windows network and Mac Shares</summary>
+    <img src="../../_inc/images/add-games/windows_network_shares.png" />
+    <img src="../../_inc/images/add-games/mac_samba_share.png" />
+  </details>
+
+- In this "computer" open "games-roms" share.  
+  Here you can add roms to corresponding folders.
+  <details> <summary>Screenshot: games-roms share in Windows Explorer</summary>
+    <img src="../../_inc/images/add-games/windows_network_games_roms.png" />
+  </details>
+
+
+### File transfer gadget (former MTP)
+
+This mode seems simple to use, but it has some limitations.
+
+- Some operating systems may need a driver or special software
+
+- Sometimes file transfer fails and you need to restart gadget and retry transfer
+
+- In EmulationStation's Network Settings: switch gadget mode to file transfer.
+  <details> <summary>Screenshot: file transfer gadget</summary>
+    <img src="../../_inc/images/add-games/gadget_file_transfer.png" />
+  </details>
+
+
+## Option 3: SD Card
 
 Games can also be added via an SD card.  There are 2 primary methods for this depending on your device.
 
@@ -103,7 +190,7 @@ If your device does not see your SD card (or write the needed folders to it) ple
 - You PC will display a list of folders, open the `roms` directory and you will see a list of folders for each system where you can place your games and bios files.
 - Add your games and place your SD card back into your device and boot up ROCKNIX.
 
-## Option 3: External USB Drive
+## Option 4: External USB Drive
 
 ROCKNIX has a built in File Manager and you can use it to access connected USB drives and transfer files. 
 
@@ -113,13 +200,9 @@ ROCKNIX has a built in File Manager and you can use it to access connected USB d
 4. Open your drive and you should see its contents
 5. From here you can navigate to the file(s) you would like to copy and then navigate back to the `storage/roms` directory and paste your copied files in the approrpiate folder.
 
-## Option 4: Linux OS
+## Option 5: Linux OS
 
 ROCKNIX' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into an linux OS will enable you to browse the directories and add files directly.
-
-## Option 5: USB Gaget Modes
-
-If your device can be put into USB gadget mode you can attempt to put the device into a USB Gadget mode which may enable you to browse the internal SD card over a USB cable. To access the gadget mode navigate to ES 'Network Settings' and scroll down to 'USB Gadget Function'. This option may not be available on all devices. MTP mode is a file transfer mode and ECM mode will create a point-to-point IP network which will then enable use of SFTP/SAMBA transfer methods if successful even when the device would otherwise not have Wireless/network functions.
 
 ### NFS Storage
 
