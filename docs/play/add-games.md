@@ -36,29 +36,30 @@ Network transfer can be used on any device that can connect to the internet (thi
 
 This option first requires you to set up networking on your device.  Please see [Networking](../../configure/networking) for details.  Once you have completed those steps make note of your IP Address in the Network Settings menu.
 
-In addition to your IP you will also need your root password.  This can be found in the Main Menu by pressing ++"START"++ in EmulationStation and navigating to `System Settings`.  You will see your root password under the `Authentication` header.
-
-!!! note "By default the root password is set up to rotate to a unique string of characters after every reboot. You can leave it like this and make note of the current password, or you can turn it off and set it to something that will persist."
+In addition to your IP you will also need your root password, which is `rocknix` by default.  
+You can change it in the Main Menu by pressing ++"START"++ in EmulationStation and navigating to `System Settings`/`Security`.
 
 ### HTTP
 
-Enabling Simple HTTP Server in Network settings lets you upload and download files by entering your device's IP address in any browser on the local network (or on VPN IP, see VPN section for details). The username is `root` and the password can be found in `Root Password` in the main menu.
+Enabling Simple HTTP Server in Network settings lets you upload and download files by entering your device's IP address in any browser on the local network (or on VPN IP, see VPN section for details). The username is `root` and the password (`rocknix` by default) can be found in `Root Password` in the Security menu.
 
 ### SMB
 
 - Windows:
     - open a Windows Explorer window, and type in `\\[YOUR IP ADDRESS]`; replace `[YOUR IP ADDRESS]` with the IP Address seen in the Network Settings menu.
     - You will be prompted for a username and password. 
-    - The username is `root` and your password will be the value from `Root Password` in the System Settings menu.
+    - The username is `root` and your password (`rocknix` by default) can be found in the `System Settings`/`Security` menu.
 - MacOS: 
     - open Finder and select `Go > Connect to Server` from the top menu.
     - In the address bar that appears, type `smb://[YOUR IP ADDRESS]`; replace `[YOUR IP ADDRESS]` with the IP Address seen in the Network Settings menu.
     - You will be prompted for a username and password.
-    - For name enter `root` and your password will be the value from `Root Password` in the System Settings menu.
+    - For name enter `root` and your password (`rocknix` by default) can be found in the `System Settings`/`Security` menu.
 
 ### SFTP/SSH
 
-Using your SFTP program of choice; set up an SFTP connection to the IP Address seen in the Network Settings menu.  Make sure the Port is set to `22`.  The username is `root` and your password will be the value from `Root Password` in the System Settings menu. 
+Using your SFTP program of choice; set up an SFTP connection to the IP Address seen in the Network Settings menu.  
+Make sure the Port is set to `22`.  
+The username is `root` and your password (`rocknix` by default) can be found in the `System Settings`/`Security` menu.
 
 You can also transfer files using the scp command line tool, which is part of OpenSSH and is included with recent versions of Windows and Linux
 
