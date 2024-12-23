@@ -190,6 +190,28 @@ If your device does not see your SD card (or write the needed folders to it) ple
 - You PC will display a list of folders, open the `roms` directory and you will see a list of folders for each system where you can place your games and bios files.
 - Add your games and place your SD card back into your device and boot up ROCKNIX.
 
+## Option 3.1: access SD Card in recovery mode
+
+### How to enter recovery mode
+
+- *RK3566 only* Before entering recovery mode, connect handheld to PC via USB
+- On other devices you can connect the cable at any time
+
+
+- On most devices, hold ++"Volume Down"++ while device boots.  
+- On SD865 (Retroid Pocket 5/Mini) choose RECOVERY option in GRUB menu
+  <details> <summary>Photo: RECOVERY menu entry on RP5</summary>
+    <img src="../../_inc/images/add-games/recovery_grub_rp5.jpg" />
+  </details>
+- A message will appear telling about exposed SD/eMMC devices
+  <details> <summary>Photo: RGB10X exposing both SD cards</summary>
+    <img src="../../_inc/images/add-games/recovery_on_rgb10x.jpg" />
+  </details>
+- Your PC should now see all your handheld storage devices as USB mass storage
+- Manage your ROMs, format partitions or even do a clean ROCKNIX install
+- Don't forget to eject all the drives to prevent filesystem corruption
+- Press ++"Volume Up"++, device will reboot into normal mode
+
 ## Option 4: External USB Drive
 
 ROCKNIX has a built in File Manager and you can use it to access connected USB drives and transfer files. 
