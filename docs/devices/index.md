@@ -20,6 +20,7 @@ We provide builds for the following devices:
   * [Anbernic RG40XX V](anbernic/rg40xx-v)
   * [Anbernic RG40XX H](anbernic/rg40xx-h)
   * [Anbernic RG CubeXX](anbernic/rg-cubexx)
+  * [Anbernic RG34XX](anbernic/rg34xx)
 * GameForce
   * [GameForce Ace](gameforce/gameforce-ace) 
 * Hardkernel
