@@ -170,7 +170,7 @@ Games can also be added via an SD card.  There are 2 primary methods for this de
 #### If you *do* wish to use a second card in Slot 2 for games
 - With your device turned off; insert a FAT32/ExFAT/ext4/btrfs formated SD card into slot 2 of your device.
 - Turn your device on.
-- When ROCKNIX completes its boot process, create your game directories by selecting the `Create Game Directories` option in `System Settings`.
+- When ROCKNIX completes its boot process, the `roms` directory will automatically be created on the second SD card.
 - Now you can turn off your device, remove your SD card from slot 2 and open it on your PC.
 - You PC will display a list of folders, open the `roms` directory and you will see a list of folders for each system where you can place your games and bios files.
 - Add your games and place your SD card back into slot 2 and boot up ROCKNIX.
@@ -185,7 +185,7 @@ If your device does not see your SD card (or write the needed folders to it) ple
 - Turn your device off
 - Insert a FAT32/ExFAT/ext4 formated SD card into your device.
 - Turn your device on
-- When ROCKNIX completes its boot process, create your game directories by selecting the `Create Game Directories` option in `System Settings`.
+- When ROCKNIX completes its boot process, the `roms` directory will automatically be created.
 - Now you can turn off your device, remove your SD card and open it on your PC.
 - You PC will display a list of folders, open the `roms` directory and you will see a list of folders for each system where you can place your games and bios files.
 - Add your games and place your SD card back into your device and boot up ROCKNIX.
