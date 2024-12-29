@@ -27,7 +27,7 @@ We provide builds for the following devices:
   * [Odroid Go Advance](hardkernel/odroid-go-advance)
   * [Odroid Go Super](hardkernel/odroid-go-super)
   * [Odroid Go Ultra](hardkernel/odroid-go-ultra)
-  * [Odroid Go N2](hardkernel/odroid-n2)
+  * [Odroid N2/N2+/N2L](hardkernel/odroid-n2)
 * Indiedroid
   * [Nova](indiedroid/nova)
 * MagicX 
