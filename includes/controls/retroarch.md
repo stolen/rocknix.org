@@ -15,7 +15,9 @@
 | ++"{{ btn_hotkey_a }}"+"R1"++ | Save State |
 | ++"{{ btn_hotkey_a }}"+"L1"++ | Load State |
 | ++"{{ btn_hotkey_a }}"+"{{ btn_north }}"++ | Open RA Menu |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_south }}"++ | Reset Game |
 | ++"{{ btn_hotkey_a }}"+"{{ btn_west }}"++ | Show FPS |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_east }}"++ | Take Sreenshot |
 | ++"{{ btn_hotkey_a }}"+"R2"++ | Fast-Forward |
 
 #### Notes:

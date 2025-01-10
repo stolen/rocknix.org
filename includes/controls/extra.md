@@ -9,8 +9,8 @@
 
 | Button Combo | Action |
 | -- | -- |
+| ++"L1"+"START"+"SELECT"++ | Exit Emulator / Application |
 | ++"{{ btn_hotkey_a }}"+"Vol \+"++ | Brightness Up |
 | ++"{{ btn_hotkey_a }}"+"Vol -"++ | Brightness Down |
 | ++"{{ btn_hotkey_b }}"+"Vol \+"++ | Battery Status |
 | ++"{{ btn_hotkey_b }}"+"Vol -"++ | WIFI Toggle |
-

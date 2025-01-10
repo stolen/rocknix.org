@@ -22,5 +22,8 @@
 | -- | -- |
 | mcpx_1.0.bin | `/roms/bios/xemu/bios` |
 | Complex_4627v1.03.bin | `/roms/bios/xemu/bios` |
+
+| Optional Files | Path |
+| -- | -- |
 | eeprom.bin | `/roms/bios/xemu/eeprom` |
 | xbox_hdd.qcow2 | `/roms/bios/xemu/hdd` |
