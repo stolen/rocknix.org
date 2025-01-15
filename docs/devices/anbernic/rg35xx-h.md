@@ -41,8 +41,6 @@
 
 ### Installation
 
-!!! note "The H700 release of ROCKNIX is not yet available."
-
 Download the latest `H700` version of ROCKNIX from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
 
 !!! warning "Before booting the device, copy the file `/device_trees/sun50i-h700-anbernic-rg35xx-h.dtb` to `/dtb.img`. If the display doesn't seems to works (flickering, noise, etc...), you may have a version with a new display, in that case, copy the file `/device_trees/sun50i-h700-anbernic-rg35xx-h-rev6-panel.dtb`"
