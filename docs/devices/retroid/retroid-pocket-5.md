@@ -21,6 +21,7 @@ search:
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 | :material-fan: Fan | Can be set globally, per system or per game. |
 | :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
+| :material-vibrate: Rumble | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
 
 ## Controls
 
