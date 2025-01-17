@@ -1,7 +1,7 @@
 {% if not btn_hotkey_a %}
 {% set btn_hotkey_a = 'SELECT' %}
 {% endif %}
-### Dolphin-SA ([Gamecube](../../../systems/gamecube))
+### Dolphin-SA ([Gamecube](../../../systems/gamecube) / [Wii](../../../systems/wii))
 
 | Button Combo | Action |
 | -- | -- |
