@@ -10,7 +10,7 @@
 
 | Name | Platform | Documentation |
 | --- | --- | --- |
-| AetherSX2 | RK3588, S922X, RK3399 | [www.aethersx2.com/archive](https://www.aethersx2.com/archive/) |
+| AetherSX2 | RK3588, S922X, RK3399, SD865 | [www.aethersx2.com/archive](https://www.aethersx2.com/archive/) |
 
 ## Bios
 

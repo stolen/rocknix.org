@@ -10,7 +10,7 @@ Overlays should be possible to add when using RetroArch cores. Broadly speaking 
 
 Instructions on how to use overlays can be found here: [https://docs.libretro.com/guides/libretro-overlays/](https://docs.libretro.com/guides/libretro-overlays/). Suggested sample configurations for different systems can be found in [https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds/#Overlays](Retrogamecorps Overlay and Shaders guide).
 
-The default selection of overlays in Retroarch is limited, additional overlays can be found on Github, see e.g [https://github.com/Duimon/Retroarch-Overlays](Duimn Retroarch-Overlays) for 16:9 systems or [https://github.com/ourigen/perfect_overlays/](Ourigen Perfect Overlays) for 4:3 screens.
+The default selection of overlays in Retroarch is limited, additional overlays can be found on Github, see e.g [https://github.com/Duimon/Retroarch-Overlays](Duimn Retroarch-Overlays) for 16:9 systems or [https://github.com/ourigen/perfect_overlays/](https://github.com/ourigen/perfect_overlays/) for 4:3 screens.
 
 ## Stand-Alone Emulators
 
