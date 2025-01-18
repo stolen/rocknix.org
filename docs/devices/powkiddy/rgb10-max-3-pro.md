@@ -12,9 +12,7 @@
 
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
-| :material-harddisk: Storage | ROCKNIX should be installed directly to the internal EMMC. <br> When installed directly to the EMMC; an SD Card can be used for game storage. |
-| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
-| :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
+| :material-harddisk: Storage | ROCKNIX should be installed directly to the internal eMMC. <br> When installed directly to the eMMC; an SD Card can be used for game storage. |
 
 ## Controls
 
@@ -42,24 +40,18 @@
 {%set btn_hotkey_b = 'F2' %}
 {%include 'controls/extra.md' %}
 
-## Emulators
-
-- [Platform Documentation (S922X)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/S922X)
-
 ## Notes
 
 ### Installation
 
-Download the latest `S922X-Odroid_GOU` version of ROCKNIX from the button below.
-
-!!! note "ROCKNIX must be flashed directly onto the RGB10 Max 3 Pro rather than an SD card.  This is done by putting the device into recovery mode, per the manual by holding down R2, L2, and power. A video demonstation [is shown here](https://youtu.be/X9wbPY5qf6o?t=1195)."
+Download the latest `S922X` version of ROCKNIX from the button below.
 
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest)
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest)
 
-### Troubleshooting
+To install ROCKNIX to the eMMC, you need to boot the device into recovery mode. There are 2 ways to do this:
 
-You cannot brick this device. If you cannot get into recovery mode, do the following:
+1. Hardkernel Recovery SD
 
 - Download [this recovery image](https://wiki.odroid.com/odroid_go_ultra/os_image/recovery).
 - Flash the image to a spare microSD card using Balena Etcher or similar.
@@ -72,6 +64,19 @@ The device should now be in recovery mode, ready to flash ROCKNIX (or other firm
 If you find yourself doing this often, consider drilling a pinhole in the back cover so that the button can be accessed with a paperclip.
 
 ![](../../_inc/images/devices/mods/powkiddy-rgb10max3pro-mod1.png){ .off-glb }
+
+2. ROCKNIX Recovery
+
+- hold ++"Volume Down"++ while the device boots.  
+
+Once booted into recovery mode and connected to a PC via USB-C, the ROCKNIX image may be flashed to the eMMC using Balena Etcher, win32diskimager, dd or similar.
+
+Once the ROCKNIX image has been flashed to the the eMMC, restart the device and ROCKNIX will go through its first boot process (running from eMMC).
+
+## Additional References
+
+- [Platform Documentation (S922X)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/S922X)
+- [Odroid Go Ultra wiki](https://wiki.odroid.com/odroid_go_ultra/odroid_go_ultra)
 
 ### Community Videos
 
