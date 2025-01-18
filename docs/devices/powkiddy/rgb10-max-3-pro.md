@@ -52,12 +52,11 @@ Download the latest `S922X` version of ROCKNIX from the button below.
 To install ROCKNIX to the eMMC, you need to boot the device into recovery mode. There are 2 ways to do this:
 
 1. Hardkernel Recovery SD
-
-  - Download [this recovery image](https://wiki.odroid.com/odroid_go_ultra/os_image/recovery).
-  - Flash the image to a spare microSD card using Balena Etcher or similar.
-  - Remove the back cover of the device (four screws).
-  - Locate a small button on the back of the board (the side that's visible), near the right thumbstick.
-  - While holding down the small button, power on the device.
+    - Download [this recovery image](https://wiki.odroid.com/odroid_go_ultra/os_image/recovery).
+    - Flash the image to a spare microSD card using Balena Etcher or similar.
+    - Remove the back cover of the device (four screws).
+    - Locate a small button on the back of the board (the side that's visible), near the right thumbstick.
+    - While holding down the small button, power on the device.
 
 The device should now be in recovery mode, ready to flash ROCKNIX (or other firmware) to the device.
 
@@ -66,8 +65,7 @@ If you find yourself doing this often, consider drilling a pinhole in the back c
 ![](../../_inc/images/devices/mods/powkiddy-rgb10max3pro-mod1.png){ .off-glb }
 
 2. ROCKNIX Recovery
-
-  - hold ++"Volume Down"++ while the device boots.  
+    - hold ++"Volume Down"++ while the device boots.  
 
 Once booted into recovery mode and connected to a PC via USB-C, the ROCKNIX image may be flashed to the eMMC using Balena Etcher, win32diskimager, dd or similar.
 
