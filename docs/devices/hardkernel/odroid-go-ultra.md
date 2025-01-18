@@ -53,12 +53,12 @@ To install ROCKNIX to the eMMC, you need to boot the device into recovery mode. 
 
 1. Hardkernel Recovery SD
 
-- Download [this recovery image](https://wiki.odroid.com/odroid_go_ultra/os_image/recovery)
-- Follow the recovery steps on [the Odroid wiki](https://wiki.odroid.com/odroid_go_ultra/getting_started/recovery_eMMC)
+  - Download [this recovery image](https://wiki.odroid.com/odroid_go_ultra/os_image/recovery)
+  - Follow the recovery steps on [the Odroid wiki](https://wiki.odroid.com/odroid_go_ultra/getting_started/recovery_eMMC)
 
 2. ROCKNIX Recovery
 
-- hold ++"Volume Down"++ while the device boots.  
+  - hold ++"Volume Down"++ while the device boots.  
 
 Once booted into recovery mode and connected to a PC via USB-C, the ROCKNIX image may be flashed to the eMMC using Balena Etcher, win32diskimager, dd or similar.
 
