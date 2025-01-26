@@ -16,7 +16,7 @@ You can contribute to the ROCKNIX Wiki in a couple of ways.
 
 Write us a message on the ROCKNIX Discord stating what should be edited or added.
 
-[ROCKNIX Discord](https://discord.gg/seTxckZjJy)
+[ROCKNIX Discord](https://discord.gg/NG6wGmSe)
 
 ### Option 2: Creating a Pull Request
 
