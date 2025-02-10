@@ -37,7 +37,7 @@ Just Enough Linux Operating System (ROCKNIX) is an immutable Linux distribution 
 
 ## Community
 
-The ROCKNIX community utilizes Discord for discussion, if you would like to join us please use this link: &nbsp;[:simple-discord: Discord](https://discord.gg/NG6wGmSe)
+The ROCKNIX community utilizes Discord for discussion, if you would like to join us please use this link: &nbsp;[:simple-discord: Discord](https://discord.gg/seTxckZjJy)
 
 ## Licenses
 
