@@ -221,6 +221,8 @@ nav:
         - RG40XX H: devices/anbernic/rg40xx-h.md
         - RG CubeXX: devices/anbernic/rg-cubexx.md
         - RG34XX: devices/anbernic/rg34xx.md
+      - Ayn:
+        - Ayn Odin 2: devices/ayn/odin2.md
       - GameForce:
         - GameForce Ace: devices/gameforce/gameforce-ace.md
       - Hardkernel:
