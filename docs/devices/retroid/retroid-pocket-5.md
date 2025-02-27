@@ -11,7 +11,7 @@ search:
 
 | Device | CPU / Architecture | Kernel | GL driver | Vulkan driver | Interface |
 | -- | -- | -- | -- | -- | -- |
-| Retroid Pocket 5 | Qualcomm SD865 | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
+| Retroid Pocket 5 | Qualcomm SD865 (SM8250) | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
 
 ## Features
 
@@ -42,7 +42,7 @@ search:
 
 ## Additional References
 
-- [Platform Documentation (SD865)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SD865)
+- [Platform Documentation (SM8250)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8250)
 
 ### Community Videos
 
