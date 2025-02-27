@@ -21,6 +21,8 @@ We provide builds for the following devices:
   * [Anbernic RG40XX H](anbernic/rg40xx-h)
   * [Anbernic RG CubeXX](anbernic/rg-cubexx)
   * [Anbernic RG34XX](anbernic/rg34xx)
+* Ayn
+  * [Ayn Odin 2](ayn/odin2)
 * GameForce
   * [GameForce Ace](gameforce/gameforce-ace) 
 * Hardkernel
