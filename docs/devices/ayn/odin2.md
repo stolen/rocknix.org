@@ -30,6 +30,7 @@ search:
 ## Flashing LinuxLoader ABL
 
 - [You must flash the Linux Loader ABL before you can boot ROCKNIX on the Odin 2 Base, Pro, or Max models](https://renegade-project.tech/en/ayn-odin2/linuxloader) 
+- [Alternative mirror: Extract the odin2_custom_abl folder to the root of Android internal storage. Then use Odin settings -> Run script as Root to run the backup_and_flash.sh script.](https://github.com/ROCKNIX/packages/raw/refs/heads/main/odin2_custom_abl_20240413.7z)
 
 ## Controls
 
