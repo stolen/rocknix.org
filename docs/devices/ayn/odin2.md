@@ -23,6 +23,14 @@ search:
 | :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
 | :material-vibrate: Rumble | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
 
+## The first official release is coming soon.
+
+- [You may be able to find tests builds on the ROCKNIX discord](https://discord.gg/6ZCRcqJw)
+
+## Flashing LinuxLoader ABL
+
+- [You must flash the Linux Loader ABL before you can boot ROCKNIX on the Odin 2 Base, Pro, or Max models](https://renegade-project.tech/en/ayn-odin2/linuxloader) 
+
 ## Controls
 
 {%set btn_north = 'X(NORTH)' %}
