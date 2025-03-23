@@ -72,185 +72,84 @@ RetroArch differentiates between *saves*, i.e. the battery or memory card storag
 ### Further Documentation
 For any questions and advanced configuration, be sure to check out the full documentation at https://docs.syncthing.net/index.html.
 
----
 
-## Rclone
+## Cloud Sync with rclone
 
-Using Rclone is easy, however configuration must be performed manually before it will function correctly.
+This guide provides instructions on configuring and using `rclone` for syncing game saves, states, screenshots, and system backups to the cloud.
 
-rclone.cfg is stored in `/storage/.config/rclone/rclone.conf` and can be copied from another device but only after the destination device has booted into ROCKNIX (so copy to secondary sd, boot device, launch 351files, copy from there to proper path above)
+### Step 1: Enable Network and SSH Access
 
-### Setup Rclone
-#### Credentialed Access
-To set up rclone, open an ssh connection to your handheld using PowerShell ssh, putty, or ssh on Linux and Mac.
-* Username: root (all lower case!)
-* Password: (To get the root password, press Start, then Select System Settings.)
-* Connection: (Your device, example RG552 or RG351MP.)
+Before configuring `rclone`, ensure your device is connected to the network and SSH access is enabled:
 
-#### Example using PowerShell ssh, Linux, or macOS:
-```ssh root@RG552```
+1. **Enable Networking**:
+   - Press `START` on your device to open the Main Menu.
+   - Navigate to `Network Settings`.
+   - Set `Enable Network` to `ON`.
+   - Select your `WIFI SSID` and enter your `WIFI Key`.
+   - Exit the menu to apply settings.
 
-#### Setting up Rclone
-Now that you're connected you will need to configure Rclone.  This process is menu driven, but also requires steps on your PC.  To complete configuration of Rclone, run `rclone config` in your ssh session and then follow the provider documentation and headless configuration steps to configure it for your cloud provider of choice.
+2. **Enable SSH**:
+   - In `Network Settings`, set `Enable SSH` to `ON`.
+   - Retrieve the `root` password from the `System Settings` menu under `Security`.
 
-* [Rclone Provider Documentation](https://rclone.org/#providers)
-* [Rclone Headless Configuration](https://rclone.org/remote_setup/)
+3. **Access via SSH**:
+   - Use an SSH client (e.g., PowerShell on Windows, Terminal on macOS/Linux) to connect:
+     ```bash
+     ssh root@<device_ip_address>
+     ```
+   - Enter the `root` password when prompted.
 
-[See detailed setup example below](https://github.com/ROCKNIX/distribution/documentation/SETUP_CLOUD_DRIVES.md#setting-up-rclone-detailed-example) 
+### Step 2: Configure rclone
 
-### Using Rclone
-In ROCKNIX you are able to mount your cloud drive like any other storage device, as long as you are network connected.  To mount your cloud drive, press Start, select Network Settings, and then select the Mount Cloud Drive option.  This drive is available on /storage/cloud by default, and is accessible from ssh and from 351Files.  To mount the cloud drive over ssh use ```rclonectl mount``` to mount the drive and ```rclonectl unmount``` to unmount it.
+With SSH access established, configure `rclone` to connect to your cloud storage provider:
 
-> Note: Mounting the cloud drive is not persistent, you will need to select it before use.
+1. **Start rclone Configuration**:
+   ```bash
+   rclone config
+   ```
+   - Follow the interactive prompts to set up a new remote.
+   - Refer to the [rclone provider documentation](https://rclone.org/remote_setup/) and [headless configuration guide](https://rclone.org/remote_setup/#configuring-by-copying-the-config-file) for detailed instructions.
 
-### Using Cloud Backup and Restore
-In the tools menu you will find two options, `Cloud Backup`, and `Cloud Restore`.  These tools will back up or restore your save games and save states by connecting your cloud drive and copying them.  These tools are configurable by editing /storage/.config/rsync.conf and /storage/.config/rsync-rules.conf.
+### Step 3: Understanding `cloud_sync.conf`
 
-> Note: The cloud backup and restore tools are destructive, but they do not delete data by default.  Deletes are left to the user to manage.
+The `cloud_sync.conf` file contains essential settings for configuring your backup and restore operations:
 
-#### rsync.conf
-The rsync.conf configuration file contains parameters used by the cloud tools that provide the path for your cloud drive to be mounted, the path to sync the data from, the destination for the sync and rsync options for cloud backup and restore.  The configuration is user editable, and the defaults are as follows:
-```
-### This is the path where your cloud volume is mounted.
-MOUNTPATH="/storage/cloud"
+- **`BACKUPPATH`**: Local directory containing game saves and screenshots.
+- **`RESTOREPATH`**: Local directory where restored data will be placed.
+- **`SYNCPATH`**: Remote cloud directory for syncing.
+- **`BACKUPFOLDER`**: Local directory for system backup files.
+- **`SYNCPATH_BACKUP`**: Remote directory for system backup files.
 
-### This is the path to your game folder on your cloud drive.
-SYNCPATH="GAMES"
+Additional options:
 
-### This is the path we are backup up from.
-BACKUPPATH="/storage/roms"
+- **`RCLONEOPTS`**: Options for logging, filters, and verbosity during sync operations.
+- **`BACKUPMETHOD`**: "sync" mirrors local files exactly; "copy" updates remote without deleting.
+- **`BACKUPFILE_BACKUP_OPTION`**: Include ("yes") or exclude ("no") system backup files.
+- **`RESTOREMETHOD`**: "copy" preserves existing local files; "sync" overwrites them.
+- **`BACKUPFILE_RESTORE_OPTION`**: Include ("yes") or exclude ("no") system backup files during restore.
+- **`RSYNCRMDIR`**: Automatically remove empty remote directories ("yes" to enable).
 
-### This allows changes to the rsync options for cloud_backup (pending stable release)
-RSYNCOPTSBACKUP="-raiv --prune-empty-dirs"
+### Step 4: Using Cloud Backup and Restore
 
-### This allows changes to the rsync options for cloud_restore (pending stable release)
-RSYNCOPTSRESTORE="-raiv"
-```
+ROCKNIX provides built-in tools for cloud backup and restore operations:
 
-#### rsync-rules.conf
-The rsync-rules.conf configuration file contains the pattern used by rsync to know which files to backup and restore.  This file is user editable.  The default settings are as follows:
-```
-# This is a required rule for subdirectory matching.
-+ */
+1. **Access Tools**:
+   - Navigate to the `Tools` menu in the user interface.
+   - Select `Cloud Backup` to back up your save games and states (and system backup if enabled).
+   - Select `Cloud Restore` to restore data from the cloud, per your `.conf` file settings.
 
-### Do not include BIOS.
-- bios/**
+2. **Configuration Files**:
+   - These tools are configurable by editing `/storage/.config/cloud_sync.conf` and `/storage/.config/cloud_sync-rules.txt`. Be careful when modifying the rules. Changes ma have unintended consequences. If you do make chages, you may want to try a dry run first.
 
-### Retroarch saves
-+ *.sav
-+ *.srm
-+ *.auto
-+ *.state*
+#### Step 5: Logs and Troubleshooting
 
-### This is a required rule to exclude all other file types.
-- *
-```
+Monitor sync logs for troubleshooting and/or more insight into rclone's activity:
 
-To create custom match rules, use - to exclude and + to include.  Use caution as a mismatched rule can copy every single file from the source path or no files at all.
-
-### Detailed Example
-
-This example configures rclone to use Dropbox
-
-Rclone provide detailed examples for connecting to all supported cloud servers, including [Rclone Dropbox example](https://rclone.org/dropbox/)
-
-#### Configure cloud backup connection on ROCKNIX device using ssh
-From the terminal command line type
-```
-rclone version
+```bash
+tail -f /var/log/cloud_sync.log
 ```
 
-and press `enter`
-
-Note the version number, which is required for a later step
-
-![Rclone version installed in ROCKNIX](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20version.png)
-
-Now type
-```
-rclone config
-```
-
-and press `enter`
-
-type `n` to create a new remote site
-
-type in a name for the site (use a name without spaces), then press `enter`
-
-> rclone suggest using `remote`, but in this example the remote site is called `rg503`
-
-> don’t include spaces in the site’s name. Rclone does allow names that include spaces, but rsync will fail if a site name with spaces is used in the cloud backup script.
-
-![Type: rclone config](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config.png)
-
-Choose from the list of cloud providers that is displayed. For Dropbox, type `12` and `enter` in this example
-
-![Select cloud provider](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20select%20dropbox.png)
-
-*The next options displayed are slightly different from the Dropbox example on rclone website*
-
-For client_id and client_secret press `enter` and `enter` to skip, or read [Rclone Dropbox example](https://rclone.org/dropbox/) for details about setting up your own App ID (rclone App ID is shared with all rclone users by default)
-
-Type `n` to skip editing the advanced config
-
-![Skip Client ID, secret and advanced config](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20client%20id.png)
-
-For auto config, select `n` for remote or headless machine (i.e. ROCKNIX device that doesn't have a web browser)
-
-![No auto-config for remote or headless machine](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20remote%20machine.png)
-
-Instructions are provided explaining how to authorize the connection from the remote device to the cloud service
-
-![Device with web-browser is required for authorization](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20authorize%20and%20paste%20token.png)
-
-#### Install and run rclone on machine with a web-browser to authorize connection to cloud service
-
-Download rclone on a device with a web-browser so rclone can use a web-page to authorize the connection by allowing you to login with your authorization credentials for the cloud service
-
-[Rclone download server](https://downloads.rclone.org/)
-
-> Download the same version of rclone as is installed on ROCKNIX device, as noted above.
-
-Use terminal window (e.g. `CMD` on Windows) to browse to rclone executable and run 
-
-```
-rclone authorize dropbox
-```
-
-and press `enter`
-
-![Authorize dropbox for rclone](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/rclone%20authorise%20dropbox.png)
-
-Rclone will launch a web page to enable login to the cloud service and authorization of the connection
-
-![Authorize dropbox for rclone](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/rclone%20authorise%20from%20pc.png)
-
-After successful authorization, the terminal window will display the authorization token that needs to be pasted into ROCKNIX ssh
-
-![Copy authorization token](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/rclone%20authorise%20login%20then%20paste%20into%20remote%20ssh.png)
-
-Copy the entire token
-
-#### Update ROCKNIX with authorization token
-
-Paste authorization token into ROCKNIX command prompt, then type `y` to confirm that the remote connection is correct
-
-![Paste authorization token into ssh](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20config%20authorize%20and%20paste%20token.png)
-
-The connection is now configured and can be tested (`q` to quit rclone config)
-
-Type 
-```
-rclone lsd rg503:
-```
-
-where `rg503` is the name of the remote connection (rclone example names the remote connection as `remote`)
-
-> **don't forget to add `:` to the name of remote connection**
-
-The names of the top-level folders within Dropbox cloud service will be displayed
-
-![Dropbox folder names are displayed](https://raw.githubusercontent.com/ROCKNIX/distribution/gh-pages/images/ssh%20rclone%20list%20top-level%20directories%20on%20dropbox.png)
+If you run into any issues, please share details in the appropriate channel in Discord.
 
 ## NFS Storage
 
