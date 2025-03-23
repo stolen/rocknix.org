@@ -67,7 +67,7 @@ reboot
 
 ### Where do I put music files to enable background music within emulationstation (while browsing my game library)?
 
-* Music files should be added to `/storage/roms/BGM`
+* Music files should be added to `/storage/roms/music`
 
 ### My game has slowdown and stuttering issues. What can I do to improve performance?
 
