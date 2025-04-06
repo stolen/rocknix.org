@@ -25,7 +25,7 @@ search:
 
 ## The first official release is coming soon.
 
-- [You may be able to find tests builds on the ROCKNIX discord](https://discord.gg/6ZCRcqJw)
+- [You may be able to find tests builds on the ROCKNIX discord](https://discord.gg/seTxckZjJy)
 
 ## Flashing LinuxLoader ABL
 
