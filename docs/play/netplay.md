@@ -21,6 +21,7 @@ Using this feature is simple.  For LAN based play, connect your devices to your 
 ### Local LAN Play (HOST)
 
 * Select Network Settings.
+  * Enable WiFi.
   * Disable Local Play Mode.
   * Select 1 (Host).
 * Choose a game and press Y.
@@ -30,6 +31,7 @@ Using this feature is simple.  For LAN based play, connect your devices to your 
 ### Local LAN Play (CLIENTS)
 
 * Select Network Settings.
+  * Enable WiFi.
   * Disable Local Play Mode.
   * Select 2-4 (Clients).
 * Choose a game and press Y.
@@ -43,6 +45,7 @@ Device to device connections will automatically generate and connect to a local 
 ### Device to Device Play (HOST)
 
 * Select Network Settings.
+  * Enable WiFi.
   * Enable Local Play Mode.
   * Select 1 (Host).
 * Choose a game and press Y.
@@ -52,6 +55,7 @@ Device to device connections will automatically generate and connect to a local 
 ### Device to Device Play (CLIENTS)
 
 * Select Network Settings.
+  * Enable WiFi.
   * Enable Local Play Mode.
   * Select 2-4 (Clients).
 * Choose a game and press Y.
