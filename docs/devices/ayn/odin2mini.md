@@ -5,7 +5,7 @@ search:
 
 # Ayn Odin 2 Mini
 
-![](../../_inc/images/devices/ayn-odin-mini.png){ .off-glb }
+![](../../_inc/images/devices/ayn-odin-2-mini.png){ .off-glb }
 
 ## Overview
 
