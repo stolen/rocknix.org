@@ -222,6 +222,8 @@ nav:
         - RG34XX: devices/anbernic/rg34xx.md
       - Ayn:
         - Ayn Odin 2: devices/ayn/odin2.md
+        - Ayn Odin 2 Mini: devices/ayn/odin2mini.md
+        - Ayn Odin 2 Portal: devices/ayn/odin2portal.md
       - GameForce:
         - GameForce Ace: devices/gameforce/gameforce-ace.md
       - Hardkernel:

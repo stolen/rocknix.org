@@ -3,15 +3,15 @@ search:
   exclude: true
 ---
 
-# Ayn Odin 2
+# Ayn Odin 2 Portal
 
-![](../../_inc/images/devices/ayn-odin-2.png){ .off-glb }
+![](../../_inc/images/devices/ayn-odin-2-portal.png){ .off-glb }
 
 ## Overview
 
 | Device | CPU / Architecture | Kernel | GL driver | Vulkan driver | Interface |
 | -- | -- | -- | -- | -- | -- |
-| Ayn Odin 2 (Base / Pro / Max) | Qualcomm 8gen2 (SM8550) | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
+| Ayn Odin 2 Portal | Qualcomm 8gen2 (SM8550) | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
 
 ## Features
 
@@ -21,7 +21,6 @@ search:
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 | :material-fan: Fan | Can be set globally, per system or per game. |
 | :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
-| :material-vibrate: Rumble | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
 
 ## Flashing LinuxLoader ABL
 
