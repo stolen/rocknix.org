@@ -17,6 +17,7 @@ Here is the name of the files to use.
 |----------------|-------------------------------|
 |RG28XX|`sun50i-h700-anbernic-rg28xx.dtb`|
 |RG34XX |`sun50i-h700-anbernic-rg34xx.dtb"`            |
+|RG34XX SP |`sun50i-h700-anbernic-rg34xx-sp.dtb"`            |
 |RG35XX 2024|`sun50i-h700-anbernic-rg35xx-2024.dtb`|
 |RG35XX 2024 rev6|`sun50i-h700-anbernic-rg35xx-2024-rev6-panel.dtb`|
 |RG35XX H|`sun50i-h700-anbernic-rg35xx-h.dtb`|
@@ -24,7 +25,7 @@ Here is the name of the files to use.
 |RG35XX Plus|`sun50i-h700-anbernic-rg35xx-plus.dtb`|
 |RG35XX Plus rev6|`sun50i-h700-anbernic-rg35xx-plus-rev6-panel.dtb`|
 |RG35XX SP|`sun50i-h700-anbernic-rg35xx-sp.dtb`|
-|RG35XX SP rev6|`sun50i-h700-anbernic-rg35xx-sp-rev6-panel.dtb`|
+|RG35XX SP v2|`sun50i-h700-anbernic-rg35xx-sp-v2-panel.dtb`|
 |RG40XX H|`sun50i-h700-anbernic-rg40xx-h.dtb`|
 |RG40XX V|`sun50i-h700-anbernic-rg40xx-v.dtb`|
 |RG CubeXX|`sun50i-h700-anbernic-rgcubexx.dtb`|
