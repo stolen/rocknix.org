@@ -231,7 +231,6 @@ nav:
         - Odroid Go Advance: devices/hardkernel/odroid-go-advance.md
         - Odroid Go Super: devices/hardkernel/odroid-go-super.md
         - Odroid Go Ultra: devices/hardkernel/odroid-go-ultra.md
-        - Odroid N2/N2+/N2L: devices/hardkernel/odroid-n2.md
       - Indiedroid:
         - Nova: devices/indiedroid/nova.md
       - MagicX:
