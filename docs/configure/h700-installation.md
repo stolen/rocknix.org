@@ -16,8 +16,8 @@ Here is the name of the files to use.
 |Model|DTB|
 |----------------|-------------------------------|
 |RG28XX|`sun50i-h700-anbernic-rg28xx.dtb`|
-|RG34XX |`sun50i-h700-anbernic-rg34xx.dtb"`            |
-|RG34XX SP |`sun50i-h700-anbernic-rg34xx-sp.dtb"`            |
+|RG34XX |`sun50i-h700-anbernic-rg34xx.dtb`            |
+|RG34XX SP |`sun50i-h700-anbernic-rg34xx-sp.dtb`            |
 |RG35XX 2024|`sun50i-h700-anbernic-rg35xx-2024.dtb`|
 |RG35XX 2024 rev6|`sun50i-h700-anbernic-rg35xx-2024-rev6-panel.dtb`|
 |RG35XX H|`sun50i-h700-anbernic-rg35xx-h.dtb`|
