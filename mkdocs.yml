@@ -250,8 +250,9 @@ nav:
         - X55: devices/powkiddy/x55.md
         - XU10: devices/powkiddy/xu10.md
       - Retroid:
-        - Retroid Pocket Mini: devices/retroid/retroid-pocket-mini.md
         - Retroid Pocket 5: devices/retroid/retroid-pocket-5.md
+        - Retroid Pocket Mini: devices/retroid/retroid-pocket-mini.md
+        - Retroid Pocket Flip2: devices/retroid/retroid-pocket-flip2.md
       - Unbranded:
         - Game Console R33S: devices/unbranded/game-console-r33s.md
         - Game Console R35S/R36S: devices/unbranded/game-console-r35s-r36s.md

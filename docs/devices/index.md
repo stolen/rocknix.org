@@ -48,8 +48,9 @@ We provide builds for the following devices:
   * [X55](powkiddy/x55)
   * [XU10](powkiddy/xu10)
 * Retroid
-  * [Retroid Pocket Mini](retroid/retroid-pocket-mini)
   * [Retroid Pocket 5](retroid/retroid-pocket-5)
+  * [Retroid Pocket Mini](retroid/retroid-pocket-mini)
+  * [Retroid Pocket Flip2](retroid/retroid-pocket-flip2)
 * Unbranded
   * [Game Console R33S](unbranded/game-console-r33s)
   * [Game Console R35S R36S](unbranded/game-console-r35s-r36s)
