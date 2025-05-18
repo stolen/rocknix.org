@@ -44,6 +44,19 @@ search:
 
 - [Platform Documentation (SM8250)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8250)
 
+### Retroid Pocket Mini V2
+!!! note "Retroid released the Android OTA for the Pocket Mini V2 with a broken bootloader"
+
+    This results in the user being unable to see the Grub boot selection screen, to fix
+    this, you are required to reflash the loader partition with fastboot.
+
+    Download the latest version of u-boot for the Pocket Mini V2 from [here](https://github.com/RetroidPocket/u-boot/releases/download/rp-v1.0.1/u-boot-sm8250-retroidpocket-rpminiv2.img).
+
+    You can then flash this from the ABL menu by holding volume-down when turning on
+    your device and using `fastboot flash loader u-boot-sm8250-retroidpocket-rpminiv2.img`.
+
+    You will need fastboot and drivers installed for this, these can be found [here](https://xdaforums.com/t/official-tool-windows-adb-fastboot-and-drivers-15-seconds-adb-installer-v1-4-3.2588979/).
+
 ### Community Videos
 
 | <iframe width="560" height="315" src="https://www.youtube.com/embed/PtZKzzWysw8?si=Zg8OB4gFO9aRG0Hb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> |
