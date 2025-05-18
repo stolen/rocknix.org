@@ -45,17 +45,27 @@ search:
 - [Platform Documentation (SM8250)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8250)
 
 ### Retroid Pocket Mini V2
-!!! note "Retroid released the Android OTA for the Pocket Mini V2 with a broken bootloader"
 
-    This results in the user being unable to see the Grub boot selection screen, to fix
-    this, you are required to reflash the loader partition with fastboot.
+!!! note "Retroid's Android OTA for the Pocket Mini V2 Breaks Bootloader Visibility"
+    The latest OTA update from Retroid for the Pocket Mini V2 includes a faulty bootloader. 
+    As a result, the GRUB boot selection screen is no longer visible at startup.
 
-    Download the latest version of u-boot for the Pocket Mini V2 from [here](https://github.com/RetroidPocket/u-boot/releases/download/rp-v1.0.1/u-boot-sm8250-retroidpocket-rpminiv2.img).
+    #### How to Fix It
+    You’ll need to manually reflash the **loader partition** using **fastboot**.
 
-    You can then flash this from the ABL menu by holding volume-down when turning on
-    your device and using `fastboot flash loader u-boot-sm8250-retroidpocket-rpminiv2.img`.
+    #### Step 1: Install Fastboot Tools
+    [15-Second ADB/Fastboot Installer](https://xdaforums.com/t/official-tool-windows-adb-fastboot-and-drivers-15-seconds-adb-installer-v1-4-3.2588979/)
 
-    You will need fastboot and drivers installed for this, these can be found [here](https://xdaforums.com/t/official-tool-windows-adb-fastboot-and-drivers-15-seconds-adb-installer-v1-4-3.2588979/).
+    #### Step 2: Download the Fixed Bootloader
+    [Download u-boot-sm8250-retroidpocket-rpminiv2.img](https://github.com/RetroidPocket/u-boot/releases/download/rp-v1.0.1/u-boot-sm8250-retroidpocket-rpminiv2.img)
+
+    #### Step 3: Enter Fastboot Mode
+    Hold **Volume Down** while powering on the device.
+
+    #### Step 4: Flash the Loader Partition
+    ```
+    fastboot flash loader u-boot-sm8250-retroidpocket-rpminiv2.img
+    ```
 
 ### Community Videos
 
