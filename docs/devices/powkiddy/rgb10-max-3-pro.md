@@ -31,6 +31,7 @@
 {%include 'controls/drastic.md' %}
 {%include 'controls/dolphin.md' %}
 {%include 'controls/lime3ds.md' %}
+{%include 'controls/azahar.md' %}
 {%include 'controls/mupen64plus.md' %}
 {%include 'controls/ppsspp.md' %}
 {%include 'controls/yabasanshiro.md' %}
